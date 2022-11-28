@@ -1,1 +1,1 @@
-[[Daily_Notes/{{date:YYYY_MM_DD }}|{{date:ddd-YYYY_MM_DD }}]] - {{time:h:mm a}}: 
+###### [[Daily_Notes/{{date:YYYY_MM_DD }}|{{date:ddd-YYYY_MM_DD }}]] - {{time:h:mm a}}: 
