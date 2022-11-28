@@ -17,3 +17,6 @@ Other info on application can be found here:
 1. [[CC Postdoc Funding 2022.pdf]]
 2. [[CSHL_T32Application Form_2022.pdf]]
 
+###### [[Daily_Notes/2022_11_27 |Sun-2022_11_27 ]] - 10:39 pm: 
+Clip to maybe use elsewhere:
+Much of our current knowledge about splicing has been gained from low throughput experiments which can only interrogate small numbers of variants or mining of RNA-seq datasets which only report on natural changes in isoform abundance. However, new techniques in high throughput variant screening make it possible to assay many tens or hundreds of thousands of of perturbations in parallel. This provides an opertunity for 
