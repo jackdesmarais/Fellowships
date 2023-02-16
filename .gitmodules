@@ -1,0 +1,3 @@
+[submodule "long_read_MPSA"]
+	path = long_read_MPSA
+	url = git@github.com:jackdesmarais/long_read_MPSA.git
