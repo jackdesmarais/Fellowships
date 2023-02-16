@@ -1,3 +1,6 @@
 [submodule "long_read_MPSA"]
 	path = long_read_MPSA
 	url = git@github.com:jackdesmarais/long_read_MPSA.git
+[submodule "JJD_science_notes"]
+	path = JJD_science_notes
+	url = git@github.com:jackdesmarais/JJD_science_notes.git
