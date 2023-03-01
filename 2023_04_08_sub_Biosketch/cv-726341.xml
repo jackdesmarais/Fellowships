@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile xmlns="http://www.ncbi.nlm.nih.gov/sciencv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/sciencv http://api.ncbi.nlm.nih.gov/sciencv/schema/sciencv.1.12.xsd" accession="SCV726341.2">
+  <identification>
+    <id idtype="orcid">0000-0002-7739-2079</id>
+    <account accounttype="eRA-Commons">jdesmarais</account>
+    <name current="yes">
+      <givennames>John</givennames>
+      <surname>Desmarais</surname>
+    </name>
+    <mailingaddress current="yes"/>
+  </identification>
+  <education>
+    <degree degreetype="B.A." degreename="B.A.">
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>Molecular Biology and Biochemistry</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>US</country>
+      </organization>
+      <startdate>
+        <year>2012</year>
+        <month>9</month>
+        <day>9</day>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+        <month>5</month>
+        <day>29</day>
+      </enddate>
+      <major>Molecular Biology and Biochemistry</major>
+    </degree>
+    <degree degreetype="PHD" degreename="DOCTOR OF PHILOSOPHY">
+      <organization>
+        <orgname>University of California Berkeley</orgname>
+        <orgsection>Molecular and Cell Biology</orgsection>
+        <city>Berkeley</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>US</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+        <month>8</month>
+        <day>22</day>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+        <month>8</month>
+      </enddate>
+      <major>Molecular and Cell Biology</major>
+    </degree>
+    <courseinfo>
+      <coursework courseworktype="University_of_California_Berkeley-PHD-Molecular_and_Cell_Biology">
+        <organization>
+          <orgname>University of California Berkeley</orgname>
+          <city>Berkeley</city>
+          <stateorprovince>CA</stateorprovince>
+          <country>US</country>
+        </organization>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 200A - Fundamentals of Molecular and Cell Biology</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 200B - Fundamentals of Molecular and Cell Biology</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 280A - Selected Topics in Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 291A - Introduction to Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 293A - Research Seminar</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 206 - Physical Biochemistry</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212A - Chemical Biology I - Structure, Synthesis and Function of Biomolecules </title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212B - Chemical Biology II - Enzyme Reaction Mechanisms </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212C - Chemical Biology III - Contemporary Topics in Chemical Biology</title>
+          <grade>A-</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 291B - Introduction to Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 293C - Responsible Conduct, Rigor and Reproducibility in Research</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 295 - Careers for Life Sciences Ph.D's</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 292 - Research </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 380 - Teaching of Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 380 - Teaching of Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 290 SEM A02 - Graduate Seminar</title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 290 SEM D01 - Graduate Seminar</title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 290 - Graduate Seminar</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 293R - Responsible Conduct of Research Refresher</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 295 - Careers for Life Sciences Ph.D's</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 290 - Graduate Seminar </title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 292 - Research </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+      </coursework>
+      <coursework courseworktype="Middlebury_College-B.A.-Molecular_Biology_and_Biochemistry">
+        <organization>
+          <orgname>Middlebury College</orgname>
+          <city>Middlebury</city>
+          <stateorprovince>VT</stateorprovince>
+          <country>US</country>
+        </organization>
+      </coursework>
+      <notes><![CDATA[<p>For all University of California Berkeley graduate level courses, S indicates a passing grade in a course graded on a Satisfactory/Not Satisfactory grading scheme.</p>
+]]></notes>
+    </courseinfo>
+  </education>
+  <employment>
+    <position featured="true" current="yes">
+      <positiontitle>Computational Postdoctoral Fellow</positiontitle>
+      <organization>
+        <orgname>Cold Spring Harbor Laboratory</orgname>
+        <orgsection>Kinney Lab</orgsection>
+        <city>Cold Spring Harbor</city>
+        <stateorprovince>NY</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2023</year>
+      </startdate>
+    </position>
+  </employment>
+  <funding/>
+  <distinctions/>
+  <contributions>
+    <citations/>
+    <memberships/>
+  </contributions>
+  <statements>
+    <statement>
+      <annotation/>
+      <citation type="journal" id="64383050">
+        <title>Accelerated RNA detection using tandem CRISPR nucleases</title>
+        <bibliographydates>
+          <bibliographydate type="display">2021 08</bibliographydate>
+        </bibliographydates>
+        <contributors>
+          <contributor type="author">Liu, Tina Y</contributor>
+          <contributor type="author">Knott, Gavin J</contributor>
+          <contributor type="author">Smock, Dylan C J</contributor>
+          <contributor type="author">Desmarais, John J</contributor>
+          <contributor type="author">Son, Sungmin</contributor>
+          <contributor type="author">Bhuiya, Abdul</contributor>
+          <contributor type="author">Jakhanwal, Shrutee</contributor>
+          <contributor type="author">Prywes, Noam</contributor>
+          <contributor type="author">Agrawal, Shreeya</contributor>
+          <contributor type="author">D\'\iaz de Le\'on Derby, Mar\'\ia</contributor>
+          <contributor type="author">Switz, Neil A</contributor>
+          <contributor type="author">Armstrong, Maxim</contributor>
+          <contributor type="author">Harris, Andrew R</contributor>
+          <contributor type="author">Charles, Emeric J</contributor>
+          <contributor type="author">Thornton, Brittney W</contributor>
+          <contributor type="author">Fozouni, Parinaz</contributor>
+          <contributor type="author">Shu, Jeffrey</contributor>
+          <contributor type="author">Stephens, Stephanie I</contributor>
+          <contributor type="author">Kumar, G Renuka</contributor>
+          <contributor type="author">Zhao, Chunyu</contributor>
+          <contributor type="author">Mok, Amanda</contributor>
+          <contributor type="author">Iavarone, Anthony T</contributor>
+          <contributor type="author">Escajeda, Arturo M</contributor>
+          <contributor type="author">McIntosh, Roger</contributor>
+          <contributor type="author">Kim, Shineui</contributor>
+          <contributor type="author">Dugan, Eli J</contributor>
+          <contributor type="author">Pollard,               Katherine S</contributor>
+          <contributor type="author">Tan, Ming X</contributor>
+          <contributor type="author">Ott, Melanie</contributor>
+          <contributor type="author">Fletcher,               Daniel A</contributor>
+          <contributor type="author">Lareau, Liana F</contributor>
+          <contributor type="author">Hsu, Patrick D</contributor>
+          <contributor type="author">Savage,               David F</contributor>
+          <contributor type="author">Doudna, Jennifer A</contributor>
+        </contributors>
+        <externalids/>
+        <journal>
+          <journalname>Nat. Chem. Biol.</journalname>
+          <page>1--7</page>
+        </journal>
+      </citation>
+      <citation type="journal" id="64383049">
+        <title>CasX enzymes comprise a distinct family of RNA-guided genome editors</title>
+        <subtitle/>
+        <bibliographydates>
+          <bibliographydate type="display">2019-2-4</bibliographydate>
+        </bibliographydates>
+        <contributors>
+          <contributor type="author">Liu,Jun-Jie,</contributor>
+          <contributor type="author">Orlova,Natalia,</contributor>
+          <contributor type="author">Oakes,Benjamin L.,</contributor>
+          <contributor type="author">Ma,Enbo,</contributor>
+          <contributor type="author">Spinner,Hannah B.,</contributor>
+          <contributor type="author">Baney,Katherine L. M.,</contributor>
+          <contributor type="author">Chuck,Jonathan,</contributor>
+          <contributor type="author">Tan,Dan,</contributor>
+          <contributor type="author">Knott,Gavin J.,</contributor>
+          <contributor type="author">Harrington,Lucas B.,</contributor>
+          <contributor type="author">Al-Shayeb,Basem,</contributor>
+          <contributor type="author">Wagner,Alexander,</contributor>
+          <contributor type="author">Brötzmann,Julian,</contributor>
+          <contributor type="author">Staahl,Brett T.,</contributor>
+          <contributor type="author">Taylor,Kian L.,</contributor>
+          <contributor type="author">Desmarais,John,</contributor>
+          <contributor type="author">Nogales,Eva,</contributor>
+          <contributor type="author">Doudna,Jennifer A.,</contributor>
+        </contributors>
+        <externalids>
+          <externalid type="doi">10.1038/s41586-019-0908-x</externalid>
+          <externalid type="pii">908</externalid>
+        </externalids>
+        <summary/>
+        <url>http://www.nature.com/articles/s41586-019-0908-x</url>
+        <info/>
+        <journal>
+          <journalname>Nature</journalname>
+          <volume>566</volume>
+          <issue>7743</issue>
+          <page>218-223</page>
+        </journal>
+      </citation>
+      <citation type="journal" id="64383052">
+        <title>DABs are inorganic carbon pumps found throughout prokaryotic
+              phyla</title>
+        <bibliographydates>
+          <bibliographydate type="display">2019 08</bibliographydate>
+        </bibliographydates>
+        <contributors>
+          <contributor type="author">Desmarais, John J</contributor>
+          <contributor type="author">Flamholz, Avi I</contributor>
+          <contributor type="author">Blikstad, Cecilia</contributor>
+          <contributor type="author">Dugan, Eli J</contributor>
+          <contributor type="author">Laughlin, Thomas G</contributor>
+          <contributor type="author">Oltrogge, Luke M</contributor>
+          <contributor type="author">Chen, Allen W</contributor>
+          <contributor type="author">Wetmore, Kelly</contributor>
+          <contributor type="author">Diamond, Spencer</contributor>
+          <contributor type="author">Wang,              Joy Y</contributor>
+          <contributor type="author">Savage, David F</contributor>
+        </contributors>
+        <externalids/>
+        <journal>
+          <journalname>Nat Microbiol</journalname>
+        </journal>
+      </citation>
+      <citation type="journal" id="64383054">
+        <title>Engineering glucose metabolism of Escherichia coli under nitrogen starvation</title>
+        <bibliographydates>
+          <bibliographydate type="display">2017</bibliographydate>
+        </bibliographydates>
+        <contributors>
+          <contributor type="author">Chubukov, Victor</contributor>
+          <contributor type="author">Desmarais, John James</contributor>
+          <contributor type="author">Wang, George</contributor>
+          <contributor type="author">Chan, Leanne Jade G</contributor>
+          <contributor type="author">Baidoo, Edward EK</contributor>
+          <contributor type="author">Petzold, Christopher J</contributor>
+          <contributor type="author">Keasling, Jay D</contributor>
+          <contributor type="author">Mukhopadhyay, Aindrila</contributor>
+        </contributors>
+        <externalids/>
+        <journal>
+          <journalname>npj Systems Biology and Applications</journalname>
+          <volume>3</volume>
+          <page>16035</page>
+        </journal>
+      </citation>
+    </statement>
+  </statements>
+</profile>
