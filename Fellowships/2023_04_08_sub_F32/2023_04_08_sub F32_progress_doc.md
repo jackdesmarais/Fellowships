@@ -1,3 +1,6 @@
+### topic
+[[Fellowship Apps]]
+
 # [[2023_02_24]]
 ###### [[Daily_Notes/2023_02_24 |Fri-2023_02_24 ]] - 2:39 pm: 
 Got microsoft word downloaded from the help desk, and started adobe purchasing. 
@@ -21,4 +24,12 @@ read [[Ma_et_al-2020-ASO-based_PKM_Splice-switching_Therapy_Inhibits_Hepatocellu
 
 ###### [[Daily_Notes/2023_02_28 |Tue-2023_02_28 ]] - 7:08 pm: 
 read [[Clower_et_al-2010-The_alternative_splicing_repressors_hnRNP_A1_A2_and_PTB_influence_pyruvate_kinase_isoform_expression_and_cell_metabolism]]
+
+# [[2023_03_01]]
+
+###### [[Daily_Notes/2023_03_01 |Wed-2023_03_01 ]] - 10:49 am: 
+started compiling lists of how we understand MXE splicing and what is known specifically about PKM splicing
+
+1. [[PKM_splicing_current_understanding]]
+2. [[Possible_MXE_mecanisms_and_screen_ideas]]
 
