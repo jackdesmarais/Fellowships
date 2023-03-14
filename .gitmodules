@@ -4,3 +4,6 @@
 [submodule "JJD_science_notes"]
 	path = JJD_science_notes
 	url = git@github.com:jackdesmarais/JJD_science_notes.git
+[submodule "Fellowships"]
+	path = Fellowships
+	url = git@github.com:jackdesmarais/Fellowships.git
