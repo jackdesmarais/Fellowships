@@ -33,3 +33,5 @@ started compiling lists of how we understand MXE splicing and what is known spec
 1. [[PKM_splicing_current_understanding]]
 2. [[Possible_MXE_mecanisms_and_screen_ideas]]
 
+# [[2023_03_12]]
+started writing [[Specific_aims_draft]]
