@@ -1,0 +1,74 @@
+%!TEX output_directory = build
+%!TEX copy_output_on_build = true
+
+\documentclass{article}
+
+\usepackage[
+backend=biber,
+style=numeric-comp,
+]{biblatex}
+\title{A bibLaTeX example}
+\addbibresource{paperpile.bib} %Imports bibliography file
+
+\usepackage{soul}
+
+\usepackage[letterpaper,
+            bindingoffset=0.2in,
+            left=1in,
+            right=1in,
+            top=1in,
+            bottom=1in,
+            footskip=.25in]{geometry}
+
+\usepackage{titlesec} 
+\titleformat{\section}[runin]
+  {\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{-\parskip}{0pt}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[runin]
+  {\normalfont\normalsize\bfseries}{Aim \thesubsection: }{0pt}{}
+\titlespacing{\subsection}{0pt}{-\parskip}{0pt}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\itshape}{Sub-aim \thesubsubsection: }{0pt}{\ul}
+\titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
+
+\begin{document}
+\section*{Specific Aims:}
+%
+\section*{Rationale: } Splicing is a process where pre-mRNAs are processed to remove introns, non-coding segments, and exons, coding segments, are stitched together. More than 90\% of human genes are alternatively spliced to produce different sets of exons in different conditions, such at different developmental stages or across cell types.\cite{Wang2008-ej} Given this, it is perhaps unsurprising that aberrant splicing has been implicated in a wide variety of human diseases including Familial Dysautonomia, Early onset Parkinson disease, and cancer.\cite{Scotti2015-yp} While most alternative splicing is believed to act on an individual intron or exon modulating inclusion, exclusion, exon boundaries in a local fashion, recent work has begun to show that correlated splicing is is far more common than previously understood.\cite{Zhu2021-fs, Tilgner2015-sb, Hatje2017-oj} A particularly interesting form of correlated splicing is mutually exclusive exons (MXEs). MXEs are clusters of exons that are spliced such that every isoform includes exactly one exon from the cluster. While in other species clusters of more that 2 MXEs are well known, examples in humans have only recently been detected and have never been extensively characterized.\cite{Jin2018-tq, Hatje2017-oj} A recent analysis of human RNA-seq data identified 629 MXE clusters, of these a known mechanism of enforcing mutual exclusivity could be detected in less than 25\%.\cite{Hatje2017-oj} A lot of progress has been made using massively parallel experiments to probe the mechanisms of splicing.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} However, existing version of these techniques have not been well suited to the problem of identifying the mechanisms of mutual exclusivity in MXE clusters. \textbf{I propose to develop a massively parallel splicing assay for characterizing mechanisms of mutual exclusivity in splicing and apply it to investigating new mechanisms of mutual exclusivity in human splicing.}
+%
+\subsection{Characterize the mechanism for mutual exclusivity in Pyruvate Kinase M (PKM) exons 9 and 10.}
+%
+\subsubsection{Develop a screen that is able to detect deviations from mutual exclusivity.} We will use next-generation sequencing technologies that are capable of sequencing the entire minigene to measure the effects of mutations in the context of varying the inclusion ratios of the relevant MXEs using splice modifying drugs. This will allow us to detect deviations from mutual exclusivity. We call this an MX-MPSA.
+%
+\subsubsection{Identifying sequence elements necessary for mutual exclusivity in PKM splicing.} To identify the sequence elements responsible for maintaining the trade off between exons 9 and 10, we propose to perform a mutant screen looking for mutations that break the anti-correlation between exon 9 and 10 across a range of ratios of exon inclusion. Previous work from our group has shown that the elements responsible for PKM mutual exclusivity are located internal to exons 9 and 10, so we will utilize saturation mutagenesis of these exons as well as broader random mutagenesis strategies to map elements that affect the degree of anti-correlation between the exons. Identified regions will be mapped at higher resolution with deep mutagenesis.
+%
+\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} We will follow up these experiments with mechanistic studies of the sequence elements that enforce mutual exclusivity. In many arthropods and the human ATE1 gene.\cite{Graveley2005-oi, Jin2018-tq, Kalinina2021-jt} MXEs are enforced by RNA secondary structural elements. We will use mutant cycle analysis on predicted important secondary structural elements to show dependence on structure. We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance of RBP binding. 
+%
+\subsection{Identify mechanisms responsible for large human MXE clusters in CD55.}
+Large scale analysis of RNA-seq datasets has revealed human genes with MXE behavior in clusters of more than two exons for the first time.\cite{Hatje2017-oj} However, no mechanism for enabling MXEs in clusters of more than 2 exons has been demonstrated for a human gene. In this aim, we will investigate mechanisms that enable large MXE clusters in humans focusing primarily on the 5 MXE cluster identified in CD55. CD55 is important for shielding cells from complement based attack and is implicated in both CHAPEL syndrome and cancer.\cite{Bharti2022-oz,Stallard2023-ll}
+%
+\subsubsection{Generate a minigene that recapitulates MXE behavior in the CD55 large cluster setting.}  In order to elucidate the mechanisms of MXE splicing in CD55, we will generate a minigene containing the MXE cluster from CD55 and validate that we observe the expected splicing behavior. We will also trial antisense oligonucleotides (ASOs) and risdiplam sensitive 5'-splice sites for inducing different exon inclusion ratios.
+%
+\subsubsection{Identifying sequence elements necessary for MXE behavior in CD55.} Bioinformatic analysis of the CD55 MXE cluster has suggested possible secondary structure control elements.\Cite{Hatje2017-oj} We will perform targeted mutagenesis of these elements as well as random mutagenesis over the whole region and screen for regions that disrupt splicing. Identified regions will be further mapped using deeper mutagenesis and ASO targeting experiments.
+%
+\subsubsection{Mechanistically characterize sequence elements related to MXE behavior in CD55.} We will follow up these experiments by using mutant cycle analysis, and modulation of predicted binding proteins to gain insight into the mechanisms of mutually exclusive splicing in CD55.
+
+
+
+
+\printbibliography
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
