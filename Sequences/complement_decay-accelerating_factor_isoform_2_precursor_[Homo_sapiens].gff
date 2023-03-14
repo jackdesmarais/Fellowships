@@ -1,0 +1,24 @@
+##gff-version	3
+##query	complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 1 440
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207495111	207495210	1.0	+	0	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 1 33
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207495727	207495912	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 34 95
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207497904	207498095	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 96 159
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207498967	207499066	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 160 193
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207500097	207500182	1.0	+	1	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 194 221
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207504453	207504641	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 222 284
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207510038	207510163	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 285 326
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207510440	207510595	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 285 336
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207510674	207510754	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 327 353
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207512742	207512762	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 354 360
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207513736	207513853	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 361 400
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207518083	207518203	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 361 401
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207520657	207520747	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 361 391
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207522553	207522628	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 361 386
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207526424	207526499	1.0	+	2	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 361 386
+gi|224589800|ref|NC_000001.10|	Scipio	protein_match	207532891	207533011	1.0	+	1	ID=2176;Query=complement%20decay%2Daccelerating%20factor%20isoform%202%20precursor%20[Homo%20sapiens] 401 440
+# protein sequence = [MTVARPSVPAALPLLGELPRLLLLVLLCLPAVWGDCGLPPDVPNAQPALEGRTSFPEDTVITYKCEESFVKIPGEKDS
+# VICLKGSQWSDIEEFCNRSCEVPTRLNSASLKQPYITQNYFPVGTVVEYECRPGYRREPSLSPKLTCLQNLKWSTAVEFCKKKSCPNPGEIRNGQIDV
+# PGGILFGATISFSCNTGYKLFGSTSSFCLISGSSVQWSDPLPECREIYCPAPPQIDNGIIQGERDHYGYRQSVTYACNKGFTMIGEHSIYCTVNNDEG
+# EWSGPPPECRGKSLTSKVPPTVQKPTTVNVPTTEVSPTSQKTTTKTTTPNAQATRSTPVSRTTKHFHETTPNKGSGTTSGTTRLLSGSRPVTQAGMRW
+# CDRSSLQSRTPGFKRSFHFSLPSSWYYRAHVFHVDRFAWDASNHGLADLAKEELRRKYTQVYRLFLVS]
+#

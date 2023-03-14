@@ -41,6 +41,7 @@
 		2. Thrombosis 
 		3. Others
 	3. Can be expressed on HeLa cells
+	4. Has predicted docker selector sequences
 16. DISC1
 	1. Has interleaved MXEs 
 	2. One cluster has 8 MXEs
