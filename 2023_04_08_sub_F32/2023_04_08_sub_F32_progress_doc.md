@@ -35,3 +35,8 @@ started compiling lists of how we understand MXE splicing and what is known spec
 
 # [[2023_03_12]]
 started writing [[Specific_aims_draft]]
+
+# [[2023_03_14]]
+Deprecated [[Specific_aims_draft]] and moved drafting over to [[F32_specific_aims_draft.tex]]
+
+making good progress!
