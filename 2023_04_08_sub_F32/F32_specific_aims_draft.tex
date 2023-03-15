@@ -40,7 +40,7 @@ style=numeric-comp,
 Splicing is a process where pre-mRNAs are processed to remove introns and stitch together exons. 
 This process offers the potential to introduce tremendous diversity into the proteome by changing which sequences from the pre-mRNA are included as exons.
 Accordingly, more than 90\% of human genes are alternatively spliced in different conditions, such as at different developmental stages or across cell types.\cite{Wang2008-ej} 
-Errors in this process have been implicated in a wide variety of human diseases including Familial Dysautonomia, early onset Parkinson disease, and cancer.\cite{Scotti2015-yp} 
+Errors in this process have been implicated in a wide variety of human diseases including familial dysautonomia, early onset Parkinson disease, and cancer.\cite{Scotti2015-yp} 
 Further recent efforts have produced drugs that modulate splicing outcomes to produce improvements in Spinal muscular Atrophy, Huntington's Disease, Duchenne muscular dystrophy, and cancer.\cite{Neil2022-vf}
 Work to understand the mechanisms of splicing stands to benefit not only our understandings of development and differentiation but also our ability to target these processes with therapeutics.
 Much progress has been made using massively parallel splicing assays (MPSAs) to probe the mechanisms of splicing.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
@@ -57,41 +57,52 @@ PKM is a central metabolic gene that controls the rate limiting step in glycolys
 The conversion between these two isoforms is a primary driver of the Warburg effect and is important in a wide variety of cancers.\Cite{Christofk2008-bu,Ma2022-dt} 
 However, while much is known about the regulation of PKM splicing, the mechanism for enforcing exclusivity between exons 9 and 10 is still unknown.
 %
-\subsubsection{Develop a screen to detect deviations from mutual exclusivity in splicing.} 
+\subsubsection{Develop a screen to detect deviations from mutual exclusivity in splicing.} \label{aim:screen_dev}
 We will utilize PKM minigene constructs designed by the Krainer lab for studying PKM splicing \cite{Wang2012-dr} and adapt MPSA techniques honed by the Kinney lab \cite{Wong2018-vq,Ishigami2022-bf} to develop a massively parallel assay for detecting mutual exclusivity or an MX-MPSA.
 In order to create the MX-MPSA, we will adjust the sequencing strategy to utilize next generation sequencing platforms capable of sequencing the entire length of the minigene in order to observe the widest array of possible splicing outcomes.
-We will then measure the isoform distribution of each mutant as a function of varying the inclusion ratios of the relevant MXEs using splice modifying drugs. 
-Any deviations from anti-correlation between MXEs will indicate that that mutant disrupted an element important for the maintenance of mutual exclusivity.
-% Pick up editing from here
+We will then measure the isoform distribution of each mutant as a function of varying the inclusion ratios of wild-type MXEs using splice modifying drug titrations.
+We will trial using modulating splice ratios in wild type genes with ASOs\cite{Wang2012-ea,Ma2022-dt} or by engineering in risdiplam sensitive elements and using drug titration MPSA techniques\cite{Ishigami2022-bf}. 
+Any deviations from anti-correlation between MXEs will indicate that that mutant disrupted an element important for the maintenance of mutual exclusivity(MMX). We will validate our analysis pipeline on simulated data, and validate our experimental pipeline against gold standard rt-qPCR and rt-PCR band analysis experiments designed PKM mutants.
 % 
-\subsubsection{Identifying sequence elements necessary for mutual exclusivity in PKM splicing.} 
-To identify the sequence elements responsible for maintaining the trade off between exons 9 and 10, we propose to perform a mutant screen looking for mutations that break the anti-correlation between exon 9 and 10 across a range of ratios of exon inclusion. 
-Previous work from our group has shown that the elements responsible for PKM mutual exclusivity are located internal to exons 9 and 10, so we will utilize saturation mutagenesis of these exons as well as broader random mutagenesis strategies to map elements that affect the degree of anti-correlation between the exons. 
-Identified regions will be mapped at higher resolution with deep mutagenesis.
+\subsubsection{Identify sequence elements necessary for mutual exclusivity in PKM splicing.} \label{aim:PKM_motif_finding}
+To identify the MMX elements for exons 9 and 10 in PKM, we propose to perform a mutant screen using the MX-MPSA technique we developed in sub-aim \ref{aim:screen_dev}. 
+Previous work has shown that MMX elements for PKM are located internal to exons 9 and 10,\cite{Wang2012-dr} so we will utilize saturation mutagenesis of these exons to identify these elements.
+We will couple these experiments with broader random mutagenesis strategies to map MMX elements that may also reside in the introns. 
+Identified regions will be mapped at higher resolution with deep mutagenesis and our MX-MPSA technique. If the MX-MPSA proves challenging to develop, we will pursue the same approach using lower throughput methods and rt-qPCR or rt-PCR band analysis approaches.
 %
-\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} 
-We will follow up these experiments with mechanistic studies of the sequence elements that enforce mutual exclusivity. 
-In many arthropods and the human ATE1 gene \cite{Graveley2005-oi, Jin2018-tq, Kalinina2021-jt} MXEs are enforced by RNA secondary structural elements. 
-We will use mutant cycle analysis on predicted important secondary structural elements to show dependence on structure. 
-We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance of RBP binding. 
+\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} \label{aim:PKM_mechanistic}
+We will follow up identification of MMX elements in sub-aim \ref{aim:PKM_motif_finding} with mechanistic studies of the sequence elements that enforce mutual exclusivity. 
+In many arthropods and the human ATE1 gene \cite{Graveley2005-oi, Jin2018-tq, Kalinina2021-jt} MMXs are RNA secondary structural elements. 
+We will use mutant cycle analysis to show dependence on structure for any identified secondary structural elements. 
+We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance identified RBP binding motifs.
+This data will be used to inform a mechanistic model of PKM MXE splicing.
 %
 \subsection{Identify mechanisms responsible for large human MXE clusters in CD55.}
 Large scale analysis of RNA-seq datasets has revealed human genes with MXE behavior in clusters of more than two exons for the first time.\cite{Hatje2017-oj} 
 However, no mechanism for enabling MXEs in clusters of more than 2 exons has been demonstrated for a human gene. 
 In this aim, we will investigate mechanisms that enable large MXE clusters in humans focusing primarily on the 5 MXE cluster identified in CD55. 
-CD55 is important for shielding cells from complement based attack and is implicated in both CHAPEL syndrome and cancer.\cite{Bharti2022-oz,Stallard2023-ll}
+CD55 is an important component of self tolerance in the complement system and is implicated in both CHAPEL syndrome and cancer.\cite{Bharti2022-oz,Stallard2023-ll}
 %
-\subsubsection{Generate a minigene that recapitulates MXE behavior in the CD55 large cluster setting.}  
-In order to elucidate the mechanisms of MXE splicing in CD55, we will generate a minigene containing the MXE cluster from CD55 and validate that we observe the expected splicing behavior. 
-We will also trial antisense oligonucleotides (ASOs) and risdiplam sensitive 5'-splice sites for inducing different exon inclusion ratios.
+\subsubsection{Generate a minigene that recapitulates MXE behavior in the CD55 large cluster setting.}  \label{aim:CD55_minigene}
+In order to elucidate the mechanisms of MXE splicing in CD55, we will generate a minigene containing the MXE cluster from CD55.
+We will validate the behavior of this minigene with rt-qPCR and rt-PCR band analysis experiments. 
+In order to enable the use of the MX-MPSA technique, we will trial antisense oligonucleotides (ASOs) and risdiplam sensitive 5'-splice sites for inducing different exon inclusion ratios.
+If CD55 proves unsuitable for this purpose, we will consider other human genes with identified large MXE clusters.
+71 such clusters were identified in a recent analysis.\cite{Hatje2017-oj} 
 %
-\subsubsection{Identifying sequence elements necessary for MXE behavior in CD55.} 
-Bioinformatic analysis of the CD55 MXE cluster has suggested possible secondary structure control elements.\Cite{Hatje2017-oj} 
-We will perform targeted mutagenesis of these elements as well as random mutagenesis over the whole region and screen for regions that disrupt splicing. 
-Identified regions will be further mapped using deeper mutagenesis and ASO targeting experiments.
+\subsubsection{Identifying sequence elements necessary for MXE behavior in CD55.} \label{aim:CD55_motif_finding}
+We will utilize the minigene developed in sub-aim \ref{aim:CD55_minigene} to look for MMX elements.
+Bioinformatic analysis of the CD55 MXE cluster has suggested possible secondary structure MMX elements.\Cite{Hatje2017-oj} 
+We will perform targeted mutagenesis of these elements as well as random mutagenesis over the set of MXEs and use the MX-MPSA we developed in sub-aim \ref{aim:screen_dev} to screen for MMX elements. 
+Identified MMX elements will be further mapped using deeper mutagenesis and ASO targeting experiments.
+This same goal can be pursued using lower throughput techniques if needed.
 %
-\subsubsection{Mechanistically characterize sequence elements related to MXE behavior in CD55.} 
-We will follow up these experiments by using mutant cycle analysis, and modulation of predicted binding proteins to gain insight into the mechanisms of mutually exclusive splicing in CD55.
+\subsubsection{Mechanistically characterize sequence elements related to MXE behavior in CD55.} \label{aim:CD55_mechanistic}
+We will select the most interesting MMX elements identified in sub-aim \ref{aim:CD55_motif_finding} for mechanistic analysis.
+Secondary structural elements will be analyzed with mutant cycles and RBP binding motifs will be analyzed with RNA pull downs and by observing the effects of motif mutants in the context of RBP knockdown or over-expression.
+This data will be used to inform a mechanistic model of CD55 MXE splicing.
+
+
 
 
 
