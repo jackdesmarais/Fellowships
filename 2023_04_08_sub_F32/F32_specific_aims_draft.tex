@@ -22,12 +22,12 @@ style=numeric-comp,
 \usepackage{titlesec} 
 \titleformat{\section}[runin]
   {\normalfont\normalsize\bfseries}{}{0pt}{}
-\titlespacing{\section}{0pt}{-\parskip}{0pt}
+\titlespacing{\section}{0pt}{-\parskip}{1mm}
 
 \renewcommand{\thesubsection}{\arabic{subsection}}
 \titleformat{\subsection}[runin]
   {\normalfont\normalsize\bfseries}{Aim \thesubsection: }{0pt}{}
-\titlespacing{\subsection}{0pt}{-\parskip}{0pt}
+\titlespacing{\subsection}{0pt}{-\parskip}{1mm}
 
 \titleformat{\subsubsection}[runin]
   {\normalfont\normalsize\itshape}{Sub-aim \thesubsubsection: }{0pt}{\ul}
@@ -37,30 +37,40 @@ style=numeric-comp,
 \section*{Specific Aims:}
 %
 \section*{Rationale: } 
-Splicing is a process where pre-mRNAs are processed to remove introns, non-coding segments, and exons, coding segments, are stitched together. 
-More than 90\% of human genes are alternatively spliced to produce different sets of exons in different conditions, such at different developmental stages or across cell types.\cite{Wang2008-ej} 
-Given this, it is perhaps unsurprising that aberrant splicing has been implicated in a wide variety of human diseases including Familial Dysautonomia, Early onset Parkinson disease, and cancer.\cite{Scotti2015-yp} 
-While most alternative splicing is believed to act on an individual intron or exon modulating inclusion, exclusion, exon boundaries in a local fashion, recent work has begun to show that correlated splicing is is far more common than previously understood.\cite{Zhu2021-fs, Tilgner2015-sb, Hatje2017-oj} 
-A particularly interesting form of correlated splicing is mutually exclusive exons (MXEs). 
+Splicing is a process where pre-mRNAs are processed to remove introns and stitch together exons. 
+This process offers the potential to introduce tremendous diversity into the proteome by changing which sequences from the pre-mRNA are included as exons.
+Accordingly, more than 90\% of human genes are alternatively spliced in different conditions, such as at different developmental stages or across cell types.\cite{Wang2008-ej} 
+Errors in this process have been implicated in a wide variety of human diseases including Familial Dysautonomia, early onset Parkinson disease, and cancer.\cite{Scotti2015-yp} 
+Further recent efforts have produced drugs that modulate splicing outcomes to produce improvements in Spinal muscular Atrophy, Huntington's Disease, Duchenne muscular dystrophy, and cancer.\cite{Neil2022-vf}
+Work to understand the mechanisms of splicing stands to benefit not only our understandings of development and differentiation but also our ability to target these processes with therapeutics.
+Much progress has been made using massively parallel splicing assays (MPSAs) to probe the mechanisms of splicing.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
+These efforts have largely focused on understanding how the sequence characteristics of the pre-RNA dictate the inclusion or exclusion of a potential exon and have made great strides.
+However, while most alternative splicing events are believed to be local affecting an individual intron or exon, recent work has begun to show that correlated splicing decisions are far more common than was previously understood.\cite{Zhu2021-fs, Tilgner2015-sb, Hatje2017-oj} 
+A particularly interesting case of correlated splicing is mutually exclusive exons (MXEs). 
 MXEs are clusters of exons that are spliced such that every isoform includes exactly one exon from the cluster. 
 While in other species clusters of more that 2 MXEs are well known, examples in humans have only recently been detected and have never been extensively characterized.\cite{Jin2018-tq, Hatje2017-oj} 
-A recent analysis of human RNA-seq data identified 629 MXE clusters, of these a known mechanism of enforcing mutual exclusivity could be detected in less than 25\%.\cite{Hatje2017-oj} 
-A lot of progress has been made using massively parallel experiments to probe the mechanisms of splicing.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
-However, existing version of these techniques have not been well suited to the problem of identifying the mechanisms of mutual exclusivity in MXE clusters. 
-\textbf{I propose to develop a massively parallel splicing assay for characterizing mechanisms of mutual exclusivity in splicing and apply it to investigating new mechanisms of mutual exclusivity in human splicing.}
-%
+A recent analysis of human RNA-seq data identified 629 MXE clusters, of of which less than 25\% had an identifiable mechanism for enforcing mutual exclusivity.\cite{Hatje2017-oj} 
+\textbf{I propose to develop a massively parallel splicing assay for characterizing mechanisms of mutual exclusivity in splicing and apply it to investigating new mechanisms of mutual exclusivity in human splicing. I will focus these efforts on Pyruvate Kinase M (PKM) and CD55.} 
+\\
 \subsection{Characterize the mechanism for mutual exclusivity in Pyruvate Kinase M (PKM) exons 9 and 10.}
+PKM is a central metabolic gene that controls the rate limiting step in glycolysis with two primary isoforms defined by the inclusion of either exon 9 or exon 10. 
+The conversion between these two isoforms is a primary driver of the Warburg effect and is important in a wide variety of cancers.\Cite{Christofk2008-bu,Ma2022-dt} 
+However, while much is known about the regulation of PKM splicing, the mechanism for enforcing exclusivity between exons 9 and 10 is still unknown.
 %
-\subsubsection{Develop a screen that is able to detect deviations from mutual exclusivity.} 
-We will use next-generation sequencing technologies that are capable of sequencing the entire minigene to measure the effects of mutations in the context of varying the inclusion ratios of the relevant MXEs using splice modifying drugs. 
-This will allow us to detect deviations from mutual exclusivity. We call this an MX-MPSA.
-%
+\subsubsection{Develop a screen to detect deviations from mutual exclusivity in splicing.} 
+We will utilize PKM minigene constructs designed by the Krainer lab for studying PKM splicing \cite{Wang2012-dr} and adapt MPSA techniques honed by the Kinney lab \cite{Wong2018-vq,Ishigami2022-bf} to develop a massively parallel assay for detecting mutual exclusivity or an MX-MPSA.
+In order to create the MX-MPSA, we will adjust the sequencing strategy to utilize next generation sequencing platforms capable of sequencing the entire length of the minigene in order to observe the widest array of possible splicing outcomes.
+We will then measure the isoform distribution of each mutant as a function of varying the inclusion ratios of the relevant MXEs using splice modifying drugs. 
+Any deviations from anti-correlation between MXEs will indicate that that mutant disrupted an element important for the maintenance of mutual exclusivity.
+% Pick up editing from here
+% 
 \subsubsection{Identifying sequence elements necessary for mutual exclusivity in PKM splicing.} 
 To identify the sequence elements responsible for maintaining the trade off between exons 9 and 10, we propose to perform a mutant screen looking for mutations that break the anti-correlation between exon 9 and 10 across a range of ratios of exon inclusion. 
 Previous work from our group has shown that the elements responsible for PKM mutual exclusivity are located internal to exons 9 and 10, so we will utilize saturation mutagenesis of these exons as well as broader random mutagenesis strategies to map elements that affect the degree of anti-correlation between the exons. 
 Identified regions will be mapped at higher resolution with deep mutagenesis.
 %
-\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} We will follow up these experiments with mechanistic studies of the sequence elements that enforce mutual exclusivity. 
+\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} 
+We will follow up these experiments with mechanistic studies of the sequence elements that enforce mutual exclusivity. 
 In many arthropods and the human ATE1 gene \cite{Graveley2005-oi, Jin2018-tq, Kalinina2021-jt} MXEs are enforced by RNA secondary structural elements. 
 We will use mutant cycle analysis on predicted important secondary structural elements to show dependence on structure. 
 We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance of RBP binding. 
