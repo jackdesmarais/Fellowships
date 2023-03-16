@@ -1,0 +1,1 @@
+My proposed project depends on using massively parallel assays, low throughput biochemical experiments, and mechanistic modeling to build an understanding of the mechanisms that allow mutual exclusivity in human splicing. I have extensive experience in all three of these areas. 

@@ -40,3 +40,29 @@ started writing [[Specific_aims_draft]]
 Deprecated [[Specific_aims_draft]] and moved drafting over to [[F32_specific_aims_draft.tex]]
 
 making good progress!
+
+# [[2023_03_15]]
+###### [[Daily_Notes/2023_03_15 |Wed-2023_03_15 ]] - 1:30 pm: 
+Finished a first draft of F32 and uploaded to overleaf
+
+trying to figure out who I need to call at OSP
+
+Lloyd Trotman connected me with:
+1. Peluso, Jessica
+	1. Assistant Director of Administration, Cancer Center
+	2. peluso@cshl.edu
+	3. 516-367-8469
+2. Baker, Lindsey
+	1. Deputy Director of Administration for the Cancer Center
+	2. lbaker@cshl.edu
+	3. 516-367-5228
+These don't seem right...
+
+Catherine Perdikoylis connected me with
+1. Fagone, Samantha
+	1. Grants Administrator, Pre-Award
+	2. fagone@cshl.edu
+	3. 516-367-5410
+This seems much more like the correct person to contact. I will reach out asap
+
+Emailed Samantha. If she doesn't get back by tomorrow will call.
