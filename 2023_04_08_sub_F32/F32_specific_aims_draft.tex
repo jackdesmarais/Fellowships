@@ -52,6 +52,16 @@ While in other species clusters of more that 2 MXEs are well known, examples in 
 A recent analysis of human RNA-seq data identified 629 MXE clusters, of of which less than 25\% had an identifiable mechanism for enforcing mutual exclusivity.\cite{Hatje2017-oj} 
 \textbf{I propose to develop a massively parallel splicing assay for characterizing mechanisms of mutual exclusivity in splicing and apply it to investigating new mechanisms of mutual exclusivity in human splicing. I will focus these efforts on Pyruvate Kinase M (PKM) and CD55.} 
 \\
+\subsection{Develop an MPSA protocol capable of handling more diverse isoforms.}
+Current MPSAs utilize Illumina technologies to read out the population of the various isoforms they detect.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
+However, this decision puts strict length limits on reads that can be obtained and therefore restricts the isoforms that can be reliably detected.
+As mutations in MXE clusters can cause the production of isoforms that include part or all of the introns in addition to just inappropriate inclusion or exclusion of exons,\cite{Wang2012-dr} longer reads are needed to fully characterize mutated MXE clusters with their native introns. 
+Further, a long read MPSA opens the door to studies of more complicated correlated splicing events like large MXE clusters\cite{Hatje2017-oj} or long distance splicing correlations.\cite{Zhu2021-fs, Tilgner2015-sb, Tilgner2018-jo}
+%
+\subsubsection{Create an MPSA protocol utilizing nanopore sequencing technology.} \label{aim:nanopore_screen_dev}
+%
+\subsubsection{Develop an analysis pipeline for quantifying isoform abundances from MPSA data.} \label{aim:pipeline_QC}
+%
 \subsection{Characterize the mechanism for mutual exclusivity in Pyruvate Kinase M (PKM) exons 9 and 10.}
 PKM is a central metabolic gene that controls the rate limiting step in glycolysis with two primary isoforms defined by the inclusion of either exon 9 or exon 10. 
 The conversion between these two isoforms is a primary driver of the Warburg effect and is important in a wide variety of cancers.\Cite{Christofk2008-bu,Ma2022-dt} 
@@ -76,31 +86,7 @@ In many arthropods and the human ATE1 gene \cite{Graveley2005-oi, Jin2018-tq, Ka
 We will use mutant cycle analysis to show dependence on structure for any identified secondary structural elements. 
 We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance identified RBP binding motifs.
 This data will be used to inform a mechanistic model of PKM MXE splicing.
-%
-\subsection{Identify mechanisms responsible for large human MXE clusters in CD55.}
-Large scale analysis of RNA-seq datasets has revealed human genes with MXE behavior in clusters of more than two exons for the first time.\cite{Hatje2017-oj} 
-However, no mechanism for enabling MXEs in clusters of more than 2 exons has been demonstrated for a human gene. 
-In this aim, we will investigate mechanisms that enable large MXE clusters in humans focusing primarily on the 5 MXE cluster identified in CD55. 
-CD55 is an important component of self tolerance in the complement system and is implicated in both CHAPEL syndrome and cancer.\cite{Bharti2022-oz,Stallard2023-ll}
-%
-\subsubsection{Generate a minigene that recapitulates MXE behavior in the CD55 large cluster setting.}  \label{aim:CD55_minigene}
-In order to elucidate the mechanisms of MXE splicing in CD55, we will generate a minigene containing the MXE cluster from CD55.
-We will validate the behavior of this minigene with rt-qPCR and rt-PCR band analysis experiments. 
-In order to enable the use of the MX-MPSA technique, we will trial antisense oligonucleotides (ASOs) and risdiplam sensitive 5'-splice sites for inducing different exon inclusion ratios.
-If CD55 proves unsuitable for this purpose, we will consider other human genes with identified large MXE clusters.
-71 such clusters were identified in a recent analysis.\cite{Hatje2017-oj} 
-%
-\subsubsection{Identifying sequence elements necessary for MXE behavior in CD55.} \label{aim:CD55_motif_finding}
-We will utilize the minigene developed in sub-aim \ref{aim:CD55_minigene} to look for MMX elements.
-Bioinformatic analysis of the CD55 MXE cluster has suggested possible secondary structure MMX elements.\Cite{Hatje2017-oj} 
-We will perform targeted mutagenesis of these elements as well as random mutagenesis over the set of MXEs and use the MX-MPSA we developed in sub-aim \ref{aim:screen_dev} to screen for MMX elements. 
-Identified MMX elements will be further mapped using deeper mutagenesis and ASO targeting experiments.
-This same goal can be pursued using lower throughput techniques if needed.
-%
-\subsubsection{Mechanistically characterize sequence elements related to MXE behavior in CD55.} \label{aim:CD55_mechanistic}
-We will select the most interesting MMX elements identified in sub-aim \ref{aim:CD55_motif_finding} for mechanistic analysis.
-Secondary structural elements will be analyzed with mutant cycles and RBP binding motifs will be analyzed with RNA pull downs and by observing the effects of motif mutants in the context of RBP knockdown or over-expression.
-This data will be used to inform a mechanistic model of CD55 MXE splicing.
+
 
 
 
