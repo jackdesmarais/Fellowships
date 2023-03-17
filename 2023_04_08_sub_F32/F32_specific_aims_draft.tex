@@ -48,43 +48,51 @@ These efforts have largely focused on understanding how the sequence characteris
 However, while most alternative splicing events are believed to be local affecting an individual intron or exon, recent work has begun to show that correlated splicing decisions are far more common than was previously understood.\cite{Zhu2021-fs, Tilgner2015-sb, Hatje2017-oj} 
 A particularly interesting case of correlated splicing is mutually exclusive exons (MXEs). 
 MXEs are clusters of exons that are spliced such that every isoform includes exactly one exon from the cluster. 
-While in other species clusters of more that 2 MXEs are well known, examples in humans have only recently been detected and have never been extensively characterized.\cite{Jin2018-tq, Hatje2017-oj} 
 A recent analysis of human RNA-seq data identified 629 MXE clusters, of of which less than 25\% had an identifiable mechanism for enforcing mutual exclusivity.\cite{Hatje2017-oj} 
-\textbf{I propose to develop a massively parallel splicing assay for characterizing mechanisms of mutual exclusivity in splicing and apply it to investigating new mechanisms of mutual exclusivity in human splicing. I will focus these efforts on Pyruvate Kinase M (PKM) and CD55.} 
+\textbf{I propose to develop a long read massively parallel splicing assay well suited for characterizing correlation in splicing.} 
+\textbf{I will apply it to investigating MXEs with a focus on Pyruvate Kinase M (PKM).} 
 \\
-\subsection{Develop an MPSA protocol capable of handling more diverse isoforms.}
+\subsection{Develop an MPSA protocol capable of handling more diverse isoforms.} \label{aim:MPSA_dev}
 Current MPSAs utilize Illumina technologies to read out the population of the various isoforms they detect.\cite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
 However, this decision puts strict length limits on reads that can be obtained and therefore restricts the isoforms that can be reliably detected.
 As mutations in MXE clusters can cause the production of isoforms that include part or all of the introns in addition to just inappropriate inclusion or exclusion of exons,\cite{Wang2012-dr} longer reads are needed to fully characterize mutated MXE clusters with their native introns. 
 Further, a long read MPSA opens the door to studies of more complicated correlated splicing events like large MXE clusters\cite{Hatje2017-oj} or long distance splicing correlations.\cite{Zhu2021-fs, Tilgner2015-sb, Tilgner2018-jo}
 %
 \subsubsection{Create an MPSA protocol utilizing nanopore sequencing technology.} \label{aim:nanopore_screen_dev}
+I will redesign our library production protocols to maximize the throughput with which we can generate test libraries and the length and complexity of the libraries we can generate.
+I will trial overlap extension PCR, gibson assembly, and golden gate assemblies for single step assembly and barcoding of multi-component libraries.
+I will map barcodes to mutant sequences with long read technologies to avoid intermediate cloning steps that could introduce post mapping biases and complicate library production while enabling detection of spontaneous mutations in unexpected regions of the minigene or vector.
+I will adapt MPSA techniques honed by the Kinney lab \cite{Wong2018-vq,Ishigami2022-bf} to produce samples well suited to nanopore sequencing.
+I will develop and optimize protocols to prepare single-transcript very deep sequencing libraries for nanopore that minimize bias while maximizing read depth on our transcript of interest.
+I will actively work to detect and minimize sources of error or bias in both mutant library and sequencing library preparation to maximize the dynamic range of the assay, the number of variants that can be reliably measured, and the diversity of isoforms that can be reliably quantified.
 %
-\subsubsection{Develop an analysis pipeline for quantifying isoform abundances from MPSA data.} \label{aim:pipeline_QC}
+\subsubsection{Develop an analysis pipeline for quantifying isoform abundances from MPSA data.} \label{aim:pipeline_dev}
+Reliably calling low abundance RNA isoforms with single nucleotide resolution from nanopore reads faces challenges.
+These challenges stem from the lower depth and higher noise inherent in nanopore reads compared to short read technologies like Illumina.
+I will develop an analysis pipeline for robustly identifying and quantifying isoforms, including low abundance minor isoforms from nanopore data.
+Since our goal is to provide quantitative data on the isoform distribution of each variant in our study, including low abundance minor isoforms, it is important that this method has the power to detect low abundance isoforms and does not falsely identify isoforms.
+In order to test and optimize the new pipeline, we will write a tool to simulate nanopore reads given a known ground truth isoform distribution for each variant.
+This will provide a tool for stress testing our analysis pipeline and identifying issues and biases so they can be resolved.
 %
 \subsection{Characterize the mechanism for mutual exclusivity in Pyruvate Kinase M (PKM) exons 9 and 10.}
 PKM is a central metabolic gene that controls the rate limiting step in glycolysis with two primary isoforms defined by the inclusion of either exon 9 or exon 10. 
 The conversion between these two isoforms is a primary driver of the Warburg effect and is important in a wide variety of cancers.\Cite{Christofk2008-bu,Ma2022-dt} 
 However, while much is known about the regulation of PKM splicing, the mechanism for enforcing exclusivity between exons 9 and 10 is still unknown.
 %
-\subsubsection{Develop a screen to detect deviations from mutual exclusivity in splicing.} \label{aim:screen_dev}
-We will utilize PKM minigene constructs designed by the Krainer lab for studying PKM splicing \cite{Wang2012-dr} and adapt MPSA techniques honed by the Kinney lab \cite{Wong2018-vq,Ishigami2022-bf} to develop a massively parallel assay for detecting mutual exclusivity or an MX-MPSA.
-In order to create the MX-MPSA, we will adjust the sequencing strategy to utilize next generation sequencing platforms capable of sequencing the entire length of the minigene in order to observe the widest array of possible splicing outcomes.
-We will then measure the isoform distribution of each mutant as a function of varying the inclusion ratios of wild-type MXEs using splice modifying drug titrations.
-We will trial using modulating splice ratios in wild type genes with ASOs\cite{Wang2012-ea,Ma2022-dt} or by engineering in risdiplam sensitive elements and using drug titration MPSA techniques\cite{Ishigami2022-bf}. 
-Any deviations from anti-correlation between MXEs will indicate that that mutant disrupted an element important for the maintenance of mutual exclusivity(MMX). We will validate our analysis pipeline on simulated data, and validate our experimental pipeline against gold standard rt-qPCR and rt-PCR band analysis experiments designed PKM mutants.
-% 
 \subsubsection{Identify sequence elements necessary for mutual exclusivity in PKM splicing.} \label{aim:PKM_motif_finding}
-To identify the MMX elements for exons 9 and 10 in PKM, we propose to perform a mutant screen using the MX-MPSA technique we developed in sub-aim \ref{aim:screen_dev}. 
+I will utilize PKM minigene constructs designed by the Krainer lab for studying PKM splicing \cite{Wang2012-dr} as a platform for screening for mutants that break the anti-correlation of MXE splicing in PKM.
+Any deviations from anti-correlation between MXEs will indicate that that mutant disrupted an element important for the maintenance of mutual exclusivity(MMX).
 Previous work has shown that MMX elements for PKM are located internal to exons 9 and 10,\cite{Wang2012-dr} so we will utilize saturation mutagenesis of these exons to identify these elements.
-We will couple these experiments with broader random mutagenesis strategies to map MMX elements that may also reside in the introns. 
-Identified regions will be mapped at higher resolution with deep mutagenesis and our MX-MPSA technique. If the MX-MPSA proves challenging to develop, we will pursue the same approach using lower throughput methods and rt-qPCR or rt-PCR band analysis approaches.
+We will couple these experiments with broader random mutagenesis strategies to map MMX elements that may also reside in the introns.
+In order measure how these effects depend on the exon 9 to exon 10 ratio, I will modulate splice ratios with ASOs\cite{Wang2012-ea,Ma2022-dt} or by engineering in risdiplam sensitive elements and using drug titration MPSA techniques\cite{Ishigami2022-bf}.
+Identified regions will be mapped at higher resolution with deep mutagenesis.
+I will perform the screen using the techniques developed in aim \ref{aim:MPSA_dev}, however, if these techniques prove impractical I can use short read sequencing to gather the data instead without loosing isoform resolution in the most important parts of the gene or pursue the same approach using lower throughput methods and rt-qPCR or rt-PCR band analysis approaches.
 %
 \subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} \label{aim:PKM_mechanistic}
 We will follow up identification of MMX elements in sub-aim \ref{aim:PKM_motif_finding} with mechanistic studies of the sequence elements that enforce mutual exclusivity. 
 In many arthropods and the human ATE1 gene \cite{Graveley2005-oi, Jin2018-tq, Kalinina2021-jt} MMXs are RNA secondary structural elements. 
 We will use mutant cycle analysis to show dependence on structure for any identified secondary structural elements. 
-We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance identified RBP binding motifs.
+We will also use RNA based pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RNA binding proteins (RBPs) to demonstrate the importance identified RBP binding motifs. The Krainer lab is adept at such techniques.\cite{Wang2012-dr}
 This data will be used to inform a mechanistic model of PKM MXE splicing.
 
 
