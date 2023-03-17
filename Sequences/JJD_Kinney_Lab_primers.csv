@@ -1,6 +1,6 @@
-Name,Seq,Length,Notes,GC,MW,Ordered,Recived,Stored
-JJD001_pcDNA5_F_FRTF,CTGGCTAACTAGAGAACCCACTGC,24-mer,Binds on pcDNA5 or at 5' of expressed RNAs,54% GC,7306.8 Da,2/28/23,,
-JJD002_SMN1_E6_fwd,CTTGATGATGCTGATGCTTTGGGA,24-mer,Binds SMN1 or 2 exon 6,46% GC,7429.9 Da,2/28/23,,
-JJD003_SMN1_E7_fwd,GAAGGAAGGTGCTCACATTC,20-mer,Binds SMN1 or 2 exon 7,50% GC,6166.1 Da,2/28/23,,
-JJD004_SMN1_E8_fwd,GACACCACTAAAGAAACGATCAG,23-mer,Binds SMN1 or 2 exon 8,43% GC,7043.7 Da,2/28/23,,
-JJD005_pcDNA5_Rev_SMN1_BC_R,GGCAACTAGAAGGCACAGTCG,21-mer,Binds on pcDNA5 or at 3' of expressed RNAs,57% GC,6489.3 Da,2/28/23,,
+Name,Seq,Length,Notes,GC,MW,Ordered,Recived,Stock,Working
+JJD001_pcDNA5_F_FRTF,CTGGCTAACTAGAGAACCCACTGC,24-mer,Binds on pcDNA5 or at 5' of expressed RNAs,54% GC,7306.8 Da,2/28/23,3/9/23,JJD primers 1 conc A1,JJD primers 1 Dil A1
+JJD002_SMN1_E6_fwd,CTTGATGATGCTGATGCTTTGGGA,24-mer,Binds SMN1 or 2 exon 6,46% GC,7429.9 Da,2/28/23,3/9/23,JJD primers 1 conc A2,JJD primers 1 Dil A2
+JJD003_SMN1_E7_fwd,GAAGGAAGGTGCTCACATTC,20-mer,Binds SMN1 or 2 exon 7,50% GC,6166.1 Da,2/28/23,3/9/23,JJD primers 1 conc A3,JJD primers 1 Dil A3
+JJD004_SMN1_E8_fwd,GACACCACTAAAGAAACGATCAG,23-mer,Binds SMN1 or 2 exon 8,43% GC,7043.7 Da,2/28/23,3/9/23,JJD primers 1 conc A4,JJD primers 1 Dil A4
+JJD005_pcDNA5_Rev_SMN1_BC_R,GGCAACTAGAAGGCACAGTCG,21-mer,Binds on pcDNA5 or at 3' of expressed RNAs,57% GC,6489.3 Da,2/28/23,3/9/23,JJD primers 1 conc A5,JJD primers 1 Dil A5
