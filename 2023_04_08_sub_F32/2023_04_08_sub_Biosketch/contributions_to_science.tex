@@ -1,0 +1,79 @@
+%!TEX output_directory = build
+%!TEX copy_output_on_build = true
+
+\documentclass{article}
+
+\raggedright
+
+\usepackage[
+backend=biber,
+style=authortitle,
+heading=none
+]{biblatex}
+\addbibresource{/Users/jackdesmarais/Documents/Kinney_lab/Fellowships/2023_04_08_sub_F32/2023_04_08_sub_Biosketch/paperpile2.bib} %Imports bibliography file
+
+
+\usepackage{soul}
+
+\usepackage[letterpaper,
+            bindingoffset=0.2in,
+            left=1in,
+            right=1in,
+            top=1in,
+            bottom=1in,
+            footskip=.25in]{geometry}
+
+\usepackage{titlesec} 
+\titleformat{\section}[runin]
+  {\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{-\parskip}{1mm}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[runin]
+  {\normalfont\normalsize\bfseries}{Aim \thesubsection: }{0pt}{}
+\titlespacing{\subsection}{0pt}{-\parskip}{1mm}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\itshape}{Sub-aim \thesubsubsection: }{0pt}{\ul}
+\titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
+
+\begin{document}
+
+
+\section*{Contributions to Science:}
+\newrefsection
+\subsection{Discovery of a new type of vectorial carbonic anhydrase:}
+
+%
+\nocite{Desmarais2019-yc}
+\printbibliography
+
+\newrefsection
+\subsection{Charecterization of potential evolutionary paths for developing carbon dioxide concentrating mechanisms:}
+
+%
+\nocite{Flamholz2022-yo}
+\printbibliography
+
+\newrefsection
+\subsection{Development of nuclease chain reaction signal amplification for viral diagnostics:}
+
+%
+\nocite{Liu2021-pu}
+\printbibliography
+
+% \newrefsection
+\subsection{Application of general epistasis techniques to protein design:}
+
+% \printbibliography
+
+\newrefsection
+\subsection{Discovery of CasX:}
+
+%
+\nocite{Liu2019-mk}
+\printbibliography
+
+
+\end{document}
+
