@@ -197,14 +197,33 @@ I also wrote analysis pipelines to process data and perform statistical analysis
 \printbibliography[heading=none]
 
 % \newrefsection
-\subsection{Application of general epistasis techniques to protein design:}
+\subsection{Random sampling general epistasis protein fitness landscape mapping and design:}
 \subsubsection{Historical background}
+Deep mutational scanning allows close mapping of a protein's fitness landscape by using massively parallel assays to measure the fitness of all single mutants of a protein of interest.
+This provides information useful for predicting the effects of mutants and in designing new mutants.
+However, deep mutational scanning experiments are difficult to perform because they require you to first make a library of all single mutants of a protein.
+They also only provide information on fitness in the protein's local context limiting their utility for prediction and design of diverse proteins.
+Fitness landscape mapping efforts would benefit greatly from being able to learn from data sets that are easier to generate and provide information over a wider area.
+Efforts to learn from random mutants for prediction and design have tended to rely on large neural networks of linear methods.
+However, linear methods miss nonlinearities in the data's true structure and neural networks operate as a black box that cannot be directly inspected to understand the results of the experiment.
+General epistatic models capture simple nonlinear genotype-phenotype relationships and may be a perfect fit for these applications, but have not been applied to protein design applications.
+Further, approaches trained on phylogentic data have been used for the same purposes but models that are able to fully leverage both phylogenetic and experimental data have been rare.
 %
 \subsubsection{Central finding}
+In this work we generate error prone PCR mutagenesis libraries of dihydrofolate reductase (DHFR) and measured enzyme activity in a massively parallel growth assay. 
+I trained models including simple linear models, general epistatic models, and large neural nets with and without access to phylogenetic data. 
+I showed that the general epistatic models had simmilar performance to the neural net on held out training data and out performed the phylogenetic data alone or the linear models. 
+I also used each of these models to design new DHFR variants while systematically varying both number of mutations and optimization strategy to evaluate how well each model is able to extrapolate beyond it's training distribution.
+Evaluation of designed proteins was performed in a massively parallel growth assay.
+This work is currently in the final data analysis and writing phase, but we hope to submit soon.
 %
 \subsubsection{Influence/Application}
+This work will be useful in providing new methods for rapidly mapping the genotype-phenotype landscape of proteins and designing new mutants.
+It will also provide simple directly inspectable models that produce performance on par with neural net approaches for some prediction and design tasks.
 %
 \subsubsection{My role}
+I am the primary author on this work.
+I designed and conceived of the experiments, produced mutant libraries, performed massively parallel growth assays, wrote analysis code, wrote model code, trained models, tested model performance, and evaluated optimized sequence behavior.
 %
 % \printbibliography[heading=none]
 
