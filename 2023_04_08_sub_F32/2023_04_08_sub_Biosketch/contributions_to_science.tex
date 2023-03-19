@@ -5,12 +5,79 @@
 
 \raggedright
 
-\usepackage[
-backend=biber,
-style=authortitle,
-heading=none
-]{biblatex}
+\usepackage[style=authoryear, backend=biber, maxnames=999]{biblatex}
 \addbibresource{/Users/jackdesmarais/Documents/Kinney_lab/Fellowships/2023_04_08_sub_F32/2023_04_08_sub_Biosketch/paperpile2.bib} %Imports bibliography file
+
+\newcounter{namesnotimportant}
+\newtoggle{ellipsis}
+
+\makeatletter
+\newbibmacro*{name:etal:delim}[1]{%
+  \ifnumgreater{\value{listcount}}{\value{liststart}}
+    {\ifboolexpr{
+       test {\ifnumless{\value{listcount}}{\value{liststop}}}
+       or
+       test \ifmorenames
+       or test {\ifnumcomp{\value{namesnotimportant}}{>}{0}}
+     }
+       {\printdelim{multinamedelim}}
+       {\lbx@finalnamedelim{#1}}}
+    {}}
+\makeatother
+
+\DeclareNameFormat{given-family-etal}{%
+  \letbibmacro{name:delim}{name:etal:delim}%
+  \ifnumcomp{\value{listcount}}{=}{1}
+    {\setcounter{namesnotimportant}{0}%
+     \global\toggletrue{ellipsis}}
+    {}%
+  \ifboolexpr{test {\ifnumcomp{\value{listcount}}{=}{1}}
+              or test {\ifnumcomp{\value{listtotal}}{=}{2}}}
+    {\ifgiveninits
+      {\usebibmacro{name:given-family}
+         {\namepartfamily}
+         {\namepartgiveni}
+         {\namepartprefix}
+         {\namepartsuffix}}
+      {\usebibmacro{name:given-family}
+         {\namepartfamily}
+         {\namepartgiven}
+         {\namepartprefix}
+         {\namepartsuffix}}}%
+    {\ifboolexpr{test {\iffieldequalstr{hash}{d044631f3f9582c1e40e11481a6d06e9}}
+            or 
+            test {\iffieldequalstr{hash}{d36f79db286d144cbc39cc5559a702d3}}
+            or 
+            test {\iffieldequalstr{hash}{02913108490bef3778a320768a68b0d9}}}%% <----- put the correct hash here
+      {\global\toggletrue{ellipsis}%
+       \ifgiveninits
+        {\usebibmacro{name:given-family}
+           {\namepartfamily}
+           {\namepartgiveni}
+           {\namepartprefix}
+           {\namepartsuffix}}
+        {\usebibmacro{name:given-family}
+           {\namepartfamily}
+           {\namepartgiven}
+           {\namepartprefix}
+           {\namepartsuffix}}}%
+      {\stepcounter{namesnotimportant}%
+       \iftoggle{ellipsis}
+         {\addcomma\space\textellipsis\global\togglefalse{ellipsis}\isdot}
+         {}}}%
+  \ifboolexpr{
+    test {\ifnumequal{\value{listcount}}{\value{liststop}}}
+    and
+    (test \ifmorenames
+     or test {\ifnumcomp{\value{namesnotimportant}}{>}{0}})
+  }
+    {\andothersdelim\bibstring{andothers}}
+    {}}
+
+\DeclareNameAlias{sortname}{given-family-etal}
+\DeclareNameAlias{author}{given-family-etal}
+\DeclareNameAlias{editor}{given-family-etal}
+\DeclareNameAlias{translator}{given-family-etal}
 
 
 \usepackage{soul}
@@ -30,11 +97,11 @@ heading=none
 
 \renewcommand{\thesubsection}{\arabic{subsection}}
 \titleformat{\subsection}[runin]
-  {\normalfont\normalsize\bfseries}{Aim \thesubsection: }{0pt}{}
+  {\normalfont\normalsize\bfseries}{Contribution \thesubsection: }{0pt}{}
 \titlespacing{\subsection}{0pt}{-\parskip}{1mm}
 
 \titleformat{\subsubsection}[runin]
-  {\normalfont\normalsize\itshape}{Sub-aim \thesubsubsection: }{0pt}{\ul}
+  {\normalfont\normalsize\itshape}{\thesubsubsection: }{0pt}{\ul}
 \titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
 
 \begin{document}
@@ -42,37 +109,106 @@ heading=none
 
 \section*{Contributions to Science:}
 \newrefsection
-\subsection{Discovery of a new type of vectorial carbonic anhydrase:}
-
+\subsection{Discovery of a new type of carbon pump that drives CO$_2$ concentration in bacteria:}
+\subsubsection{Historical background}
+Rubisco is the enzyme responsible for fixing the vast majority of all the CO$_2$ that enters the biosphere each year and is essential for all plants, algae, and most autotrophic bacteria. 
+However, Rubisco evolved before the great oxygenation event and is competitively inhibited by the presence of O$_2$.
+This is a problem that all autotrophs that use rubisco must overcome to survive in the the modern atmosphere, with its 20\% O$_2$ and only 0.04\% CO$_2$.
+Many autotrophic bacteria including a wide range of chemolithoautotrophs and most cyanobacteria overcome this issue using an $\alpha$-carboxysome based CO$_2$ concentrating mechanism (CCM).
+These CCMs work by creating a compartment inside the bacteria where the concentration of CO$_2$ is raised high enough to saturate rubisco with CO$_2$ and out-compete O$_2$.
+While our theoretical understanding and previous experimental work suggested that an inorganic carbon (C$_i$) transporter was absolutely required for the functioning of the CCM, no such transporter was known in the model chemolithoautotroph \textit{H. neapolitanus}.
+%
+\subsubsection{Central finding}
+I performed a genome-wide genetic screen for CCM components in \textit{H. neapolitanus}. 
+I identified the essential components of the CCM in \textit{H. neapolitanus}.
+I cloned putative C$_i$ transporters, called DABs, then confirmed their activity with reporter strain and C$_i$ uptake assays in \textit{E. coli}. 
+I showed that data was consistent with these transporters acting not as direct transporters but as a new family of energy coupled carbonic anhydrase (CA) enzymes.
+These CAs concentrate C$_i$ by converting membrane permeable CO$_2$ into membrane impermeable HCO$_{3}^{-}$ causing a net flow of C$_i$ into the cell.
+I further showed that similar operons in the human pathogens \textit{V. Cholera} and \textit{B. anthracis} had the same function.
+%
+\subsubsection{Influence/Application}
+This work was instrumental in ongoing study of the CCM including a successful effort to reconstitute a functional $\alpha$-carboxysome CCM in \textit{E. coli}, and work on CCM evolution that I will discuss in contribution \ref{CCM_evo}. 
+Since this work was published, it was shown that a similar operon in \textit{S. aureus} has the same function and is essential for growth in atmospheric CO$_2$ concentrations. 
+Considering the activity of energy coupled CA transporters has been shown to be necessary to understand the carbon isotope fractionation data in very old rock strata.
+There has been interest in investigating the potential applications of DABs in engineering crop plants and autotrophic bio-fuel production hosts for increased yield.
+%
+\subsubsection{My role}
+I was the primary author on this work.
+I conceived and designed the experiments, performed the genetic screen, analyzed the sequencing data, did cloning, performed the biochemistry experiments, and performed the reporter strain experiments.
 %
 \nocite{Desmarais2019-yc}
-\printbibliography
+\printbibliography[heading=none]
 
 \newrefsection
-\subsection{Charecterization of potential evolutionary paths for developing carbon dioxide concentrating mechanisms:}
+\subsection{Characterization of potential evolutionary paths for developing carbon dioxide concentrating mechanisms:} \label{CCM_evo}
+\subsubsection{Historical background}
+The $\alpha$-carboxysome based CO$_2$ concentrating mechanism (CCM) required several major evolutionary steps to evolve.
+These were acquiring CA activity, gaining C$_i$ transport, and encapsulating CA and rubisco in an $\alpha$-carboxysome.
+However, all of these components are need for the effect of the CCM and removing even one of these components is lethal in modern autotrophs.
+Since there is no apparent fitness benefit for a partial system, it is not clear how the system could have evolved.
+Geochemical evidence suggests that the atmosphere was very different when the CCM first evolved, with much higher levels of CO$_2$ and much lower levels of O$_2$ and a mixture of biological and geochemical processes has slowly changed the atmospheric composition to the current mixture.
+This information lead us to the hypothesis that evolutionary intermediates of the CCM may have provided fitness benefits at intermediate atmospheric compositions.
+%
+\subsubsection{Central finding}
 
 %
+\subsubsection{Influence/Application}
+%
+\subsubsection{My role}
+%
 \nocite{Flamholz2022-yo}
-\printbibliography
+\printbibliography[heading=none]
 
 \newrefsection
 \subsection{Development of nuclease chain reaction signal amplification for viral diagnostics:}
-
+\subsubsection{Historical background}
+%
+\subsubsection{Central finding}
+%
+\subsubsection{Influence/Application}
+%
+\subsubsection{My role}
 %
 \nocite{Liu2021-pu}
-\printbibliography
+\printbibliography[heading=none]
 
 % \newrefsection
 \subsection{Application of general epistasis techniques to protein design:}
-
-% \printbibliography
+\subsubsection{Historical background}
+%
+\subsubsection{Central finding}
+%
+\subsubsection{Influence/Application}
+%
+\subsubsection{My role}
+%
+% \printbibliography[heading=none]
 
 \newrefsection
 \subsection{Discovery of CasX:}
-
+\subsubsection{Historical background}
 %
-\nocite{Liu2019-mk}
-\printbibliography
+\subsubsection{Central finding}
+%
+\subsubsection{Influence/Application}
+%
+\subsubsection{My role}
+%
+\nocite{Liu2019-nk}
+\printbibliography[heading=none]
+
+\newrefsection
+\subsection{Improved production of chemicals in E. coli through nitrogen limitation:}
+\subsubsection{Historical background}
+%
+\subsubsection{Central finding}
+%
+\subsubsection{Influence/Application}
+%
+\subsubsection{My role}
+%
+\nocite{Chubukov2017-uu}
+\printbibliography[heading=none]
 
 
 \end{document}
