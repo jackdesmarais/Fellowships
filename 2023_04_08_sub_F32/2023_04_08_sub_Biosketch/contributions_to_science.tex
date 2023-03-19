@@ -5,7 +5,7 @@
 
 \raggedright
 
-\usepackage[style=authoryear, backend=biber, maxnames=999]{biblatex}
+\usepackage[style=authoryear, backend=biber,url=false,eprint=false, maxnames=999]{biblatex}
 \addbibresource{/Users/jackdesmarais/Documents/Kinney_lab/Fellowships/2023_04_08_sub_F32/2023_04_08_sub_Biosketch/paperpile2.bib} %Imports bibliography file
 
 \newcounter{namesnotimportant}
@@ -159,7 +159,7 @@ Our mathematical modeling suggests that at intermediate CO$_2$ concentrations an
 This revealed a possible path to evolving a CCM through only fitness positive steps by acquiring first either a coupled or uncoupled CA, then acquiring the other type of CA as CO$_2$ fall further, and finally evolving an $\alpha$-carboxysome as CO$_2$ concentrations approach modern levels.
 %
 \subsubsection{Influence/Application}
-This work provides insight into the evolution of the CCM and into possible life strategies of modern organisms living in hign CO$_2$ environments.
+This work provides insight into the evolution of the CCM and into possible life strategies of modern organisms living in high CO$_2$ environments.
 These strategies might also be useful for improving the growth of industrial autotrophs at intermediate CO$_2$ concentrations.
 Further, showing the functional expression of the DAB in \textit{C. necator} offers the potential for using the DAB to improve bioplastics production.
 %
@@ -170,14 +170,28 @@ My role in this project was to measure the effect of all CCM gene knockouts on t
 \printbibliography[heading=none]
 
 \newrefsection
-\subsection{Development of nuclease chain reaction signal amplification for viral diagnostics:}
+\subsection{Development of nuclease amplification for cas13 viral diagnostics:}
 \subsubsection{Historical background}
+CRISPR based diagnostics offer an attractive option for rapid point of care or at home detection of nucleic acids, such as virus genomes.
+Their advantages include fast detection times, ease of conversion into either lateral flow or fluorescence assays, and simple operation (they do not require multiple liquid handling or incubation steps).
+However existing CRISPR diagnostics were not sensitive enough to detect clinically relevant levels of SARS-COV2 in patient samples without pre-amplification of target sequences which negated all of these advantages.
+Class III CRISPR systems include a cyclic-oligo-A activated nuclease csm6 that is used to amplify the CRISPR immune response.
+We were interested in determining if we could link cas13 detection of viral RNAs to csm6 activation to improve limit of detection and allow SARS-COV2 detection in clinical samples.
 %
 \subsubsection{Central finding}
+We found that cleavage of an A4-U6 substrate by cas13 produced a good activator for csm6.
+However, the reaction appeared to be self limiting.
+Kinetic modeling and reagent spike in experiments suggested that csm6's intrinsic activator cleavage activity was causing the self-limitation.
+By using a single-fluoro modified activator, we were able to remove this self limitation and detect SARS-COV2 genomes in clinical samples.
+We also developed a microfluidic device for automating sample processing and assay performance.
 %
 \subsubsection{Influence/Application}
+This work has demonstrated a new method of improving time to detection and sensitivity in CRISPR diagnostics. 
+This work will contribute to new and improved diagnostics technologies for the detection of a variety of clinically and scientifically relevant nucleic acids.
 %
 \subsubsection{My role}
+My role in this work was to perform kinetic modeling of different potential reaction setups to predict potential improvement in time to detection or limit of detection, this included the analysis that suggested that using an uncleavable activator would remove self-limitation.
+I also wrote analysis pipelines to process data and perform statistical analysis of data, including developing methods for detecting positive samples from microfluidic device data.
 %
 \nocite{Liu2021-pu}
 \printbibliography[heading=none]
