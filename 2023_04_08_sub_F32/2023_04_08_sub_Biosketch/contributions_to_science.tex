@@ -178,35 +178,6 @@ My role in this project was to measure the effect of all CCM gene knockouts on t
 
 \leavevmode\newline
 
-\newrefsection
-\subsection{Development of nuclease amplification for cas13 viral diagnostics:}
-\subsubsection{Historical background}
-CRISPR based diagnostics offer an attractive option for rapid point of care or at home detection of nucleic acids, such as virus genomes.
-Their advantages include fast detection times, ease of conversion into either lateral flow or fluorescence assays, and simple operation (they do not require multiple liquid handling or incubation steps).
-However existing CRISPR diagnostics were not sensitive enough to detect clinically relevant levels of SARS-COV2 in patient samples without pre-amplification of target sequences which negated all of these advantages.
-Class III CRISPR systems include a cyclic-oligo-A activated nuclease csm6 that is used to amplify the CRISPR immune response.
-We were interested in determining if we could link cas13 detection of viral RNAs to csm6 activation to improve limit of detection and allow SARS-COV2 detection in clinical samples.
-%
-\subsubsection{Central finding}
-We found that cleavage of an A4-U6 substrate by cas13 produced a good activator for csm6.
-However, the reaction appeared to be self limiting.
-Kinetic modeling and reagent spike in experiments suggested that csm6's intrinsic activator cleavage activity was causing the self-limitation.
-By using a single-fluoro modified activator, we were able to remove this self limitation and detect SARS-COV2 genomes in clinical samples.
-We also developed a microfluidic device for automating sample processing and assay performance.
-%
-\subsubsection{Influence/Application}
-This work has demonstrated a new method of improving time to detection and sensitivity in CRISPR diagnostics. 
-This work will contribute to new and improved diagnostics technologies for the detection of a variety of clinically and scientifically relevant nucleic acids.
-%
-\subsubsection{My role}
-My role in this work was to perform kinetic modeling of different potential reaction setups to predict potential improvement in time to detection or limit of detection, this included the analysis that suggested that using an uncleavable activator would remove self-limitation.
-I also wrote analysis pipelines to process data and perform statistical analysis of data, including developing methods for detecting positive samples from microfluidic device data.
-%
-\nocite{Liu2021-pu}
-\printbibliography[heading=none]
-
-\leavevmode\newline
-
 % \newrefsection
 \subsection{Random sampling general epistasis protein fitness landscape mapping and design:}
 \subsubsection{Historical background}
@@ -241,27 +212,41 @@ I designed and conceived of the experiments, produced mutant libraries, performe
 \leavevmode\newline
 
 \newrefsection
-\subsection{Discovery of CasX:}
+\subsection{Development of new CRISPR tools:}
 \subsubsection{Historical background}
-The field of genome editing was launched by the discovery of RNA guided DNA cleaving nucleases.
-At the time there were only two such families, cas9 and cas12a, and there was interest in finding new programmable DNA nucleases with smaller sizes that would make them easier to deliver in therapeutics and potentially new mechanisms.
-CasX was discovered as a <1,000 Amino acids RuvC containing protein in CRISPR loci and shown to be capable of protecting from plasmid transformation.
+CRISPR associated proteins have fuel a biotechnological revolution.
+They have found uses ranging from knocking out genes in human cells, to controlling expression in bacteria, to detecting nucleic acids in clinical samples.
+Crafting new CRISPR tools relies on either discovery of new natural proteins that have evolved the activity we require or combining already known proteins in new combinations.
+During my graduate career I helped with two main CRISPR tool projects, the identifying CasX as a new RNA guided DNA nuclease and the development of Cas13 and Csm6 based RNA diagnostics.
 %
-\subsubsection{Central finding}
-We demonstrated that CasX was capable of cleaving dsDNA in cis and ssDNA in trans when provided with a complementary sgRNA \textit{in vitro}.
-We showed induction of NHEJ at the targeted locus in human HEK293 T cells with wild type CasX and CRISPRi knockdown of genes in \textit{E. coli} with dead casX.
-We solved cryo-EM to solve the structure of dcasX in complex with DNA and showed that there were two new domains the non-target strand binding (NTSB) domain and the target strand loading (TSL) domain.
+\subsubsection{CasX genome editing}
+RNA guided DNA cleaving nucleases were the foundational discovery of the CRISPR field.
+At the time of this work, cas9 and cas12a were the only two families proteins known to perform this function.
+However, these proteins are large and can be difficult to deliver as therapeutics, so there was interest in identifying new smaller nucleases.
+CasX was discovered as a <1,000 Amino acids RuvC containing protein in CRISPR loci and shown to be capable of protecting from plasmid transformation.
+We demonstrated guided cutting activity \textit{in vitro} as well as gene knockout and CRISPRi \textit{in vivo}.
+We then solved a Cryo-EM structure of the complex with target DNA and identified two new domains the non-target strand binding (NTSB) domain and the target strand loading (TSL) domain.
 We showed that the NTSB is needed for unwinding dsDNA.
 We also detected a putative zinc binding motif in the TSL and showed that casX purifies bound to zinc.
-%
-\subsubsection{Influence/Application}
+My role in this project was to use x-ray fluorescence spectroscopy to identify the zinc bound to the purified protein.
 CasX provides a new modality for genome editing that is proving useful in a variety of applications and provides hope for aiding the treatment of a wide variety of diseases.
 Scribe Therapeutics is pursuing casX based therapies.
 %
-\subsubsection{My role}
-My role in this project was to measure zinc content in purified protein using x-ray fluorescence spectroscopy.
+\subsubsection{Csm6 boosted Cas13 RNA detection}
+CRISPR based diagnostics offer a quick and simple method for detecting nucleic acids that can be coupled to a fluorescence or lateral flow assay without multiple liquid handling or incubation steps.
+This makes them attractive for use in at-home or point-of-care diagnostics.
+However existing CRISPR diagnostics were not sensitive enough to detect clinically relevant levels of SARS-COV2 in patient samples without pre-amplification of target sequences which negated all of these advantages.
+Class III CRISPR systems include a cyclic-oligo-A activated nuclease csm6 that is used to amplify the CRISPR immune response.
+We were interested in determining if we could link cas13 detection of viral RNAs to csm6 activation to improve limit of detection and allow SARS-COV2 detection in SARS-COV2 clinical samples.
+We designed collateral substrates for cas13 that would activate Csm6.
+We used modeling and spike in assays to determine that activator self cleavage was limiting sensitivity and chemically modified the activator inhibit this process, achieving detection of SARS-COV2 clinical samples.
+My role in this work was to perform kinetic modeling of different potential reaction setups to predict potential improvement in time to detection or limit of detection, this included the analysis that suggested that using an uncleavable activator would remove self-limitation.
+I also wrote analysis pipelines to process data and perform statistical analysis of data, including developing methods for detecting positive samples from microfluidic device data.
+This work has demonstrated a new method of improving time to detection and sensitivity in CRISPR diagnostics. 
+This work will contribute to new and improved diagnostics technologies for the detection of a variety of clinically and scientifically relevant nucleic acids.
 %
-\nocite{Liu2019-nk}
+
+\nocite{Liu2021-pu,Liu2019-nk}
 \printbibliography[heading=none]
 
 \leavevmode\newline
@@ -288,6 +273,62 @@ My role in this project was to perform growth and chemical production assays wit
 %
 \nocite{Chubukov2017-uu}
 \printbibliography[heading=none]
+
+\leavevmode\newline
+
+\newrefsection
+\subsection{Development of nuclease amplification for cas13 viral diagnostics:}
+\subsubsection{Historical background}
+CRISPR based diagnostics offer an attractive option for rapid point of care or at home detection of nucleic acids, such as virus genomes.
+Their advantages include fast detection times, ease of conversion into either lateral flow or fluorescence assays, and simple operation (they do not require multiple liquid handling or incubation steps).
+However existing CRISPR diagnostics were not sensitive enough to detect clinically relevant levels of SARS-COV2 in patient samples without pre-amplification of target sequences which negated all of these advantages.
+Class III CRISPR systems include a cyclic-oligo-A activated nuclease csm6 that is used to amplify the CRISPR immune response.
+We were interested in determining if we could link cas13 detection of viral RNAs to csm6 activation to improve limit of detection and allow SARS-COV2 detection in clinical samples.
+%
+\subsubsection{Central finding}
+We found that cleavage of an A4-U6 substrate by cas13 produced a good activator for csm6.
+However, the reaction appeared to be self limiting.
+Kinetic modeling and reagent spike in experiments suggested that csm6's intrinsic activator cleavage activity was causing the self-limitation.
+By using a single-fluoro modified activator, we were able to remove this self limitation and detect SARS-COV2 genomes in clinical samples.
+We also developed a microfluidic device for automating sample processing and assay performance.
+%
+\subsubsection{Influence/Application}
+This work has demonstrated a new method of improving time to detection and sensitivity in CRISPR diagnostics. 
+This work will contribute to new and improved diagnostics technologies for the detection of a variety of clinically and scientifically relevant nucleic acids.
+%
+\subsubsection{My role}
+My role in this work was to perform kinetic modeling of different potential reaction setups to predict potential improvement in time to detection or limit of detection, this included the analysis that suggested that using an uncleavable activator would remove self-limitation.
+I also wrote analysis pipelines to process data and perform statistical analysis of data, including developing methods for detecting positive samples from microfluidic device data.
+%
+\nocite{Liu2021-pu}
+\printbibliography[heading=none]
+
+\leavevmode\newline
+
+\newrefsection
+\subsection{Discovery of CasX:}
+\subsubsection{Historical background}
+The field of genome editing was launched by the discovery of RNA guided DNA cleaving nucleases.
+At the time there were only two such families, cas9 and cas12a, and there was interest in finding new programmable DNA nucleases with smaller sizes that would make them easier to deliver in therapeutics and potentially new mechanisms.
+CasX was discovered as a <1,000 Amino acids RuvC containing protein in CRISPR loci and shown to be capable of protecting from plasmid transformation.
+%
+\subsubsection{Central finding}
+We demonstrated that CasX was capable of cleaving dsDNA in cis and ssDNA in trans when provided with a complementary sgRNA \textit{in vitro}.
+We showed induction of NHEJ at the targeted locus in human HEK293 T cells with wild type CasX and CRISPRi knockdown of genes in \textit{E. coli} with dead casX.
+We solved cryo-EM to solve the structure of dcasX in complex with DNA and showed that there were two new domains the non-target strand binding (NTSB) domain and the target strand loading (TSL) domain.
+We showed that the NTSB is needed for unwinding dsDNA.
+We also detected a putative zinc binding motif in the TSL and showed that casX purifies bound to zinc.
+%
+\subsubsection{Influence/Application}
+CasX provides a new modality for genome editing that is proving useful in a variety of applications and provides hope for aiding the treatment of a wide variety of diseases.
+Scribe Therapeutics is pursuing casX based therapies.
+%
+\subsubsection{My role}
+My role in this project was to measure zinc content in purified protein using x-ray fluorescence spectroscopy.
+%
+\nocite{Liu2019-nk}
+\printbibliography[heading=none]
+
 
 
 \end{document}
