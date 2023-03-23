@@ -216,32 +216,30 @@ I designed and conceived of the experiments, produced mutant libraries, performe
 \newrefsection
 \subsection{Development of new CRISPR tools:}
 \subsubsection{Historical background}
-Cas proteins have found uses ranging from knocking out genes, to controlling expression, to detecting nucleic acids.
-Crafting new CRISPR tools relies on discovery of new natural proteins and combining already known proteins in new ways.
-During my graduate career I helped with two main CRISPR tool projects, identifying CasX as a new RNA guided DNA nuclease and the development of Cas13/Csm6 RNA diagnostics.
+The ever expanding suite of CRISPR tools has helped drive a biotech revolution.
+I have been part of two tool development projects, identifying CasX as a new RNA guided DNA nuclease and the development of Cas13/Csm6 RNA diagnostics.
 %
 \subsubsection{CasX genome editing}
 RNA guided DNA nucleases launched the CRISPR field.
-However, large nuclease size has hindered therapeutic applications.
-CasX was discovered as a <1,000 amino acid RuvC containing protein in CRISPR loci, with little homology to known nucleases, capable of protecting bacteria from transformation.
-We demonstrated guided cutting activity \textit{in vitro} as well as gene knockout and CRISPRi \textit{in vivo}.
-We then solved a Cryo-EM structure of the complex with target DNA and identified two new domains.
-We also detected a putative zinc binding motif and showed that casX purifies bound to zinc.
-My role in this project was to use x-ray fluorescence spectroscopy to identify the zinc bound to the purified protein.
-CasX provides a new modality for genome editing that is proving useful in a variety of applications and provides hope for aiding the treatment of a wide variety of diseases.
+However, nuclease size has hindered therapeutic applications.
+CasX is a $<$1,000 amino acid RuvC containing protein from CRISPR loci.
+We demonstrated guide directed cutting activity \textit{in vitro} as well as cutting and CRISPRi \textit{in vivo}.
+We solved a structure of the complex with target DNA and identified two new domains.
+We also detected a zinc binding motif and showed that CasX binds zinc.
+My role was to use x-ray fluorescence to identify the zinc bound to the purified protein.
+CasX provides a new modality for genome editing that is proving useful in a variety of applications.
 Scribe Therapeutics is pursuing casX based therapies.
 %
 \subsubsection{Csm6 boosted Cas13 RNA detection}
-CRISPR diagnostics allow detection of nucleic acids without multiple liquid handling or incubation steps.
-This makes them attractive for use in at-home or point-of-care diagnostics.
-However, they were not sensitive enough to detect SARS-COV2 in patient samples without pre-amplification of target sequences.
-Class III CRISPR systems include a cyclic-oligo-A activated nuclease, Csm6, to strengthen the immune response.
-We hypothesized linking cas13 detection of viral RNAs to csm6 activation would amplify the signal and allow SARS-COV2 detection in clinical samples.
-We designed collateral substrates for cas13 that would activate Csm6.
-We used kinetic modeling and spike in assays to show that activator self cleavage was limiting sensitivity.
-Using an uncleavable activator allowed detection of SARS-COV2 in clinical samples.
-My role in this work was kinetic modeling of potential reaction schemes to predict behavior and writing the data analysis and statistics pipelines.
-This work has improved time to detection and sensitivity in CRISPR diagnostics and allow detection of clinically relevant nucleic acids.
+CRISPR diagnostics can detect nucleic acids in one-pot isothermal reactions.
+This makes them attractive for at-home or point-of-care diagnostics.
+However, poor sensitivity meant pre-amplification was required to detect SARS-COV2 in patient samples.
+Class III CRISPR systems include a cyclic-oligo-A activated nuclease, Csm6.
+We hypothesized that linking cas13 and csm6 using cas13 targets that release Csm6 activator upon cleavage would improve sensitivity.
+We used kinetic modeling and spike in assays to show that secondary activator cleavage was limiting sensitivity.
+Using an activator resistant to secondary cleavage allowed detection of SARS-COV2 in clinical samples.
+My role in this work was kinetic modeling and writing the data analysis and statistical pipelines.
+This work has improved time to detection and sensitivity in CRISPR diagnostics.
 %
 
 \nocite{Liu2021-pu,Liu2019-nk}
@@ -275,133 +273,6 @@ My role in this project was to perform growth and chemical production assays wit
 \printbibliography[heading=none]
 
 % \leavevmode\newline
-\leavevmode\pagebreak
-
-
-\newrefsection
-\subsection{Discovery of a new type of carbon pump that drives CO$_2$ concentration in bacteria:}
-\subsubsection{Historical background}
-Rubisco is the enzyme responsible for fixing the vast majority of all the CO$_2$ that enters the biosphere each year and is essential for all plants, algae, and most autotrophic bacteria. 
-However, Rubisco evolved before the great oxygenation event and is competitively inhibited by the presence of O$_2$.
-This is a problem that all autotrophs that use rubisco must overcome to survive in the the modern atmosphere, with its 20\% O$_2$ and only 0.04\% CO$_2$.
-Many autotrophic bacteria including a wide range of chemolithoautotrophs and most cyanobacteria overcome this issue using an $\alpha$-carboxysome based CO$_2$ concentrating mechanism (CCM).
-These CCMs work by creating a compartment inside the bacteria where the concentration of CO$_2$ is raised high enough to saturate rubisco with CO$_2$ and out-compete O$_2$.
-While our theoretical understanding and previous experimental work suggested that an inorganic carbon (C$_i$) transporter was absolutely required for the functioning of the CCM, no such transporter was known in the model chemolithoautotroph \textit{H. neapolitanus}.
-I identified putative transporters, .
-%
-\subsubsection{Central finding}
-I performed a genome-wide genetic screen for CCM components in \textit{H. neapolitanus}. 
-I identified the essential components of the CCM in \textit{H. neapolitanus}.
-I cloned putative C$_i$ transporters, called DABs, then confirmed their activity with reporter strain and C$_i$ uptake assays in \textit{E. coli}. 
-I showed that data was consistent with these transporters acting not as direct transporters but as a new family of energy coupled carbonic anhydrase (CA) enzymes.
-These CAs concentrate C$_i$ by converting membrane permeable CO$_2$ into membrane impermeable HCO$_{3}^{-}$ causing a net flow of C$_i$ into the cell.
-I further showed that similar operons in the human pathogens \textit{V. Cholera} and \textit{B. anthracis} had the same function.
-%
-\subsubsection{Influence/Application}
-This work was instrumental in ongoing study of the CCM including a successful effort to reconstitute a functional $\alpha$-carboxysome CCM in \textit{E. coli}, and work on CCM evolution that I will discuss in contribution \ref{CCM_evo}. 
-Since this work was published, it was shown that a similar operon in \textit{S. aureus} has the same function and is essential for growth in atmospheric CO$_2$ concentrations. 
-Considering the activity of energy coupled CA transporters has been shown to be necessary to understand the carbon isotope fractionation data in very old rock strata.
-There has been interest in investigating the potential applications of DABs in engineering crop plants and autotrophic bio-fuel production hosts (like \textit{C. necator}) for increased yield.
-%
-\subsubsection{My role}
-I was the primary author on this work.
-I conceived and designed the experiments, performed the genetic screen, analyzed the sequencing data, did cloning, performed the biochemistry experiments, and performed the reporter strain experiments.
-%
-\nocite{Desmarais2019-yc,Desmarais2018-ac,Desmarais2019-dc}
-\printbibliography[heading=none]
-
-% \leavevmode\newline
-\leavevmode\pagebreak
-
-
-\newrefsection
-\subsection{Characterization of potential evolutionary paths for developing carbon dioxide concentrating mechanisms:} \label{CCM_evo}
-\subsubsection{Historical background}
-The $\alpha$-carboxysome based CO$_2$ concentrating mechanism (CCM) required several major evolutionary steps to evolve.
-These were acquiring uncoupled CA activity, gaining C$_i$ transport, and encapsulating CA and rubisco in an $\alpha$-carboxysome.
-However, all of these components are need for the effect of the CCM and removing even one of these components is lethal in modern autotrophs.
-Since there is no apparent fitness benefit for a partial system, it is not clear how the system could have evolved.
-Geochemical evidence suggests that the atmosphere was very different when the CCM first evolved, with much higher levels of CO$_2$ and much lower levels of O$_2$ and a mixture of biological and geochemical processes has slowly changed the atmospheric composition to the current mixture.
-This information lead us to the hypothesis that evolutionary intermediates of the CCM may have provided fitness benefits at intermediate atmospheric compositions.
-%
-\subsubsection{Central finding}
-We compared the effect of CCM gene knockouts in \textit{H. neapolitanus} across different intermediate CO$_2$ concentrations.
-We also compared the growth phenotypes of partial CCM constructs in CO$_2$ concentration dependent strains of \textit{E. coli} and \textit{C. necator} that we constructed.
-We found that introduction of an uncoupled CA (non-transporter) or a coupled CA (C$_i$ transporter) provided a fitness benefit at intermediate CO$_2$ concentrations.
-We also found that while combining either of these activities with the $\alpha$-carboxysome on their own provided no benefit, combining them with each other provided benefits in some situations. 
-This was unexpected, because including a coupled and an uncoupled CA in the same cell without encapsulation is expected to produce a futile cycle.
-Our mathematical modeling suggests that at intermediate CO$_2$ concentrations and high growth rates the cell can become limited by both CO$_2$ and HCO$_{3}^{-}$ and C$_i$ consumption is high enough that cycling is actually beneficial for providing both C$_i$ species for growth.
-This revealed a possible path to evolving a CCM through only fitness positive steps by acquiring first either a coupled or uncoupled CA, then acquiring the other type of CA as CO$_2$ fall further, and finally evolving an $\alpha$-carboxysome as CO$_2$ concentrations approach modern levels.
-%
-\subsubsection{Influence/Application}
-This work provides insight into the evolution of the CCM and into possible life strategies of modern organisms living in high CO$_2$ environments.
-These strategies might also be useful for improving the growth of industrial autotrophs at intermediate CO$_2$ concentrations.
-Further, showing the functional expression of the DAB in \textit{C. necator} offers the potential for using the DAB to improve bioplastics production.
-%
-\subsubsection{My role}
-My role in this project was to measure the effect of all CCM gene knockouts on the growth of \textit{H. neapolitanus} across a panel of intermediate CO$_2$ concentrations to establish which components of it's CCM are needed for growth at intermediate CO$_2$ concentrations.
-%
-\nocite{Flamholz2022-yo}
-\printbibliography[heading=none]
-
-% \leavevmode\newline
-\leavevmode\pagebreak
-
-
-\newrefsection
-\subsection{Development of nuclease amplification for cas13 viral diagnostics:}
-\subsubsection{Historical background}
-CRISPR based diagnostics offer an attractive option for rapid point of care or at home detection of nucleic acids, such as virus genomes.
-Their advantages include fast detection times, ease of conversion into either lateral flow or fluorescence assays, and simple operation (they do not require multiple liquid handling or incubation steps).
-However existing CRISPR diagnostics were not sensitive enough to detect clinically relevant levels of SARS-COV2 in patient samples without pre-amplification of target sequences which negated all of these advantages.
-Class III CRISPR systems include a cyclic-oligo-A activated nuclease csm6 that is used to amplify the CRISPR immune response.
-We were interested in determining if we could link cas13 detection of viral RNAs to csm6 activation to improve limit of detection and allow SARS-COV2 detection in clinical samples.
-%
-\subsubsection{Central finding}
-We found that cleavage of an A4-U6 substrate by cas13 produced a good activator for csm6.
-However, the reaction appeared to be self limiting.
-Kinetic modeling and reagent spike in experiments suggested that csm6's intrinsic activator cleavage activity was causing the self-limitation.
-By using a single-fluoro modified activator, we were able to remove this self limitation and detect SARS-COV2 genomes in clinical samples.
-We also developed a microfluidic device for automating sample processing and assay performance.
-%
-\subsubsection{Influence/Application}
-This work has demonstrated a new method of improving time to detection and sensitivity in CRISPR diagnostics. 
-This work will contribute to new and improved diagnostics technologies for the detection of a variety of clinically and scientifically relevant nucleic acids.
-%
-\subsubsection{My role}
-My role in this work was to perform kinetic modeling of different potential reaction setups to predict potential improvement in time to detection or limit of detection, this included the analysis that suggested that using an uncleavable activator would remove self-limitation.
-I also wrote analysis pipelines to process data and perform statistical analysis of data, including developing methods for detecting positive samples from microfluidic device data.
-%
-\nocite{Liu2021-pu}
-\printbibliography[heading=none]
-
-% \leavevmode\newline
-\leavevmode\pagebreak
-
-
-\newrefsection
-\subsection{Discovery of CasX:}
-\subsubsection{Historical background}
-The field of genome editing was launched by the discovery of RNA guided DNA cleaving nucleases.
-At the time there were only two such families, cas9 and cas12a, and there was interest in finding new programmable DNA nucleases with smaller sizes that would make them easier to deliver in therapeutics and potentially new mechanisms.
-CasX was discovered as a <1,000 Amino acids RuvC containing protein in CRISPR loci and shown to be capable of protecting from plasmid transformation.
-%
-\subsubsection{Central finding}
-We demonstrated that CasX was capable of cleaving dsDNA in cis and ssDNA in trans when provided with a complementary sgRNA \textit{in vitro}.
-We showed induction of NHEJ at the targeted locus in human HEK293 T cells with wild type CasX and CRISPRi knockdown of genes in \textit{E. coli} with dead casX.
-We solved cryo-EM to solve the structure of dcasX in complex with DNA and showed that there were two new domains the non-target strand binding (NTSB) domain and the target strand loading (TSL) domain.
-We showed that the NTSB is needed for unwinding dsDNA.
-We also detected a putative zinc binding motif in the TSL and showed that casX purifies bound to zinc.
-%
-\subsubsection{Influence/Application}
-CasX provides a new modality for genome editing that is proving useful in a variety of applications and provides hope for aiding the treatment of a wide variety of diseases.
-Scribe Therapeutics is pursuing casX based therapies.
-%
-\subsubsection{My role}
-My role in this project was to measure zinc content in purified protein using x-ray fluorescence spectroscopy.
-%
-\nocite{Liu2019-nk}
-\printbibliography[heading=none]
 
 
 
