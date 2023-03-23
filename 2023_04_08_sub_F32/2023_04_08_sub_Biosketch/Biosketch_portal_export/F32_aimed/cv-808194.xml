@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile xmlns="http://www.ncbi.nlm.nih.gov/sciencv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/sciencv http://api.ncbi.nlm.nih.gov/sciencv/schema/sciencv.1.12.xsd" accession="SCV808194.3">
+  <identification>
+    <id idtype="orcid">0000-0002-7739-2079</id>
+    <account accounttype="eRA-Commons">jdesmarais</account>
+    <name current="yes">
+      <givennames>John</givennames>
+      <surname>Desmarais</surname>
+    </name>
+    <mailingaddress current="yes"/>
+  </identification>
+  <education>
+    <degree degreetype="B.A." degreename="B.A.">
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>Molecular Biology and Biochemistry</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>US</country>
+      </organization>
+      <startdate>
+        <year>2012</year>
+        <month>9</month>
+        <day>9</day>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+        <month>5</month>
+        <day>29</day>
+      </enddate>
+      <major>Molecular Biology and Biochemistry</major>
+    </degree>
+    <degree degreetype="PHD" degreename="DOCTOR OF PHILOSOPHY">
+      <organization>
+        <orgname>University of California Berkeley</orgname>
+        <orgsection>Molecular and Cell Biology</orgsection>
+        <city>Berkeley</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>US</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+        <month>8</month>
+        <day>22</day>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+        <month>8</month>
+      </enddate>
+      <major>Molecular and Cell Biology</major>
+    </degree>
+    <professionaltraining trainingtype="Postdoctoral Fellow">
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <city>Berkeley</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2022</year>
+        <month>10</month>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+        <month>12</month>
+      </enddate>
+      <description>Postdoctoral Fellow in the Savage lab</description>
+    </professionaltraining>
+    <professionaltraining trainingtype="Postdoctoral Fellow">
+      <organization>
+        <orgname>Cold Spring Harbor Laboratory</orgname>
+        <city>Cold Spring Harbor</city>
+        <stateorprovince>NY</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2023</year>
+        <month>1</month>
+      </startdate>
+      <description>Computational Postdoctoral Fellow in the Kinney Lab</description>
+    </professionaltraining>
+    <courseinfo>
+      <coursework courseworktype="University_of_California_Berkeley-PHD-Molecular_and_Cell_Biology">
+        <organization>
+          <orgname>University of California Berkeley</orgname>
+          <city>Berkeley</city>
+          <stateorprovince>CA</stateorprovince>
+          <country>US</country>
+        </organization>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 200A - Fundamentals of Molecular and Cell Biology</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 200B - Fundamentals of Molecular and Cell Biology</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 280A - Selected Topics in Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 291A - Introduction to Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2016</year>
+          </enddate>
+          <title>MCELLBI 293A - Research Seminar</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 206 - Physical Biochemistry</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212A - Chemical Biology I - Structure, Synthesis and Function of Biomolecules </title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212B - Chemical Biology II - Enzyme Reaction Mechanisms </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI C212C - Chemical Biology III - Contemporary Topics in Chemical Biology</title>
+          <grade>A-</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 291B - Introduction to Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 293C - Responsible Conduct, Rigor and Reproducibility in Research</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 295 - Careers for Life Sciences Ph.D's</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 292 - Research </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2017</year>
+          </enddate>
+          <title>MCELLBI 380 - Teaching of Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2018</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 380 - Teaching of Molecular and Cell Biology</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 290 SEM A02 - Graduate Seminar</title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 290 SEM D01 - Graduate Seminar</title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2019</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 290 - Graduate Seminar</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 293R - Responsible Conduct of Research Refresher</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 295 - Careers for Life Sciences Ph.D's</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2020</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism</title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 290 - Graduate Seminar </title>
+          <grade>A+</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2021</year>
+          </enddate>
+          <title>MCELLBI 292 - Research </title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 218X - Research Review in Biochemistry and Molecular Biology: Chemical Reactions of Metabolism </title>
+          <grade>S</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 292 - Research</title>
+          <grade>A</grade>
+        </course>
+        <course>
+          <enddate>
+            <year>2022</year>
+          </enddate>
+          <title>MCELLBI 294 - Current Topics in Biomedical Sciences</title>
+          <grade>S</grade>
+        </course>
+      </coursework>
+      <coursework courseworktype="Middlebury_College-B.A.-Molecular_Biology_and_Biochemistry">
+        <organization>
+          <orgname>Middlebury College</orgname>
+          <city>Middlebury</city>
+          <stateorprovince>VT</stateorprovince>
+          <country>US</country>
+        </organization>
+      </coursework>
+      <notes><![CDATA[<p>For all University of California Berkeley graduate level courses, the scale is from A to F (A+ is awarded as a mark of achievement but both A+ and A are counted as 4.0 for GPA calculations) and passing grades are B- or higher. In this scale A+ is a 4.0, A is also 4.0, and an A- is a 3.7. S indicates a passing grade (B- or higher) in a course graded on a Satisfactory/Not Satisfactory grading scheme, courses graded on this scheme are not included in GPA calculations.</p>
+]]></notes>
+    </courseinfo>
+  </education>
+  <employment>
+    <position featured="false" current="yes">
+      <positiontitle>Computational Postdoctoral Fellow</positiontitle>
+      <organization>
+        <orgname>Cold Spring Harbor Laboratory</orgname>
+        <orgsection>Kinney Lab</orgsection>
+        <city>Cold Spring Harbor</city>
+        <stateorprovince>NY</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2023</year>
+      </startdate>
+    </position>
+    <position featured="false" current="yes">
+      <positiontitle>Member</positiontitle>
+      <organization>
+        <orgname>Phi Beta Kappa honor society</orgname>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Postdoctoral Fellow</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Savage Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2022</year>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Graduate student instructor</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2017</year>
+      </startdate>
+      <enddate>
+        <year>2019</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Graduate student researcher</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Savage Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Amgen Scholar</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Joint Bioenergy Institute</orgsection>
+        <orgsection>Keasling Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2015</year>
+      </startdate>
+      <enddate>
+        <year>2015</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Researcher</positiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>Ward Lab</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2014</year>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Stowers Summer Scholar</positiontitle>
+      <organization>
+        <orgname>Stowers Institute for Medical Research</orgname>
+        <orgsection>Matt Gibson Lab</orgsection>
+        <city>Kansas City</city>
+        <stateorprovince>MO</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2014</year>
+      </startdate>
+      <enddate>
+        <year>2014</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Researcher</positiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>2013 STEM Innovation Program</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2013</year>
+      </startdate>
+      <enddate>
+        <year>2013</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Intern</positiontitle>
+      <organization>
+        <orgname>University of Washington Medical School</orgname>
+        <orgsection>Neitz Color Vision Lab</orgsection>
+        <city>Seattle</city>
+        <stateorprovince>WA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2011</year>
+      </startdate>
+      <enddate>
+        <year>2012</year>
+      </enddate>
+    </position>
+  </employment>
+  <funding/>
+  <distinctions>
+    <distinction>
+      <distinctiontitle>The 27th Annual Western Photosynthesis Conference travel award </distinctiontitle>
+      <organization>
+        <orgname>Western Photosynthesis conference</orgname>
+      </organization>
+      <startdate>
+        <year>2017</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Elbert C. Cole ’15 Memorial Fund Prize</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College, Department of Biology</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Summa cum laude</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>High Honors</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College Department of Molecular Biology and Biochemistry</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Inducted Phi Beta Kappa honor society</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Dean’s List, spring semester</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2015</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>College Scholar, 6 semesters</distinctiontitle>
+      <organization>
+        <orgname>Middlebury college</orgname>
+      </organization>
+      <startdate>
+        <year>2013</year>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+      </enddate>
+    </distinction>
+  </distinctions>
+  <contributions>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <memberships/>
+  </contributions>
+  <statements>
+    <statement>
+      <annotation/>
+    </statement>
+  </statements>
+</profile>
