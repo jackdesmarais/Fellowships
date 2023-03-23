@@ -114,18 +114,18 @@
 
 \section*{Contributions to Science:}
 \newrefsection
-\subsection{A new type of inorganic carbon (C$_i$) pump that drives CO$_2$ concentration:}
+\subsection{A new type of inorganic carbon pump that drives CO$_2$ concentration:}
 \subsubsection{Historical background}
 The enzyme rubisco fixes $>$99.5\% of the CO$_2$ entering the biosphere each year and is essential in plants, algae, and most autotrophic bacteria. 
-However, Rubisco is inhibited by of O$_2$, a problem in the the modern atmosphere with its 20\% O$_2$ and only 0.04\% CO$_2$.
+However, Rubisco is inhibited by O$_2$, a problem in the the modern atmosphere with its 20\% O$_2$ and only 0.04\% CO$_2$.
 Many bacteria overcome this using an $\alpha$-carboxysome based CO$_2$ concentrating mechanism ($\alpha$-CCM).
-These systems rely on HCO$_{3}^{-}$ pumps however, the mechanism of HCO$_{3}^{-}$ pumping was unknown in chemotrophs.
+These systems rely on HCO$_{3}^{-}$ pumping, however, the mechanism of HCO$_{3}^{-}$ pumping was unknown in chemotrophs.
 %
 \subsubsection{Central finding}
 To identify HCO$_{3}^{-}$ pumps, I screened for $\alpha$-CCM genes in the model chemotroph \textit{H. neapolitanus}.
 I identified two putative transporter operons, then showed sufficiency for pumping in \textit{E. coli}. 
 Unexpectedly, the data were consistent with energy coupled carbonic anhydrase (CA) activity not direct pumping.
-This causes C$_i$ flux by converting membrane permeable CO$_2$ into membrane impermeable HCO$_{3}^{-}$ trapping it in the cell.
+This causes HCO$_{3}^{-}$ flux by converting membrane permeable CO$_2$ into membrane impermeable HCO$_{3}^{-}$ trapping it in the cell.
 I showed homologs in the pathogens \textit{V. Cholera} and \textit{B. anthracis} had the same activity.
 %
 \subsubsection{My role}
@@ -148,15 +148,15 @@ There are proposed applications of these pumps in engineering crop plants and au
 \subsection{Potential evolutionary paths of carbon dioxide concentrating mechanisms:}\label{CCM_EVO}
 \subsubsection{Historical background}
 The $\alpha$-carboxysome based CO$_2$ concentrating mechanism ($\alpha$-CCM) required several major evolutionary steps to evolve.
-However, none of the potential intermediates are expected to provide a fitness benefit in modern conditions so it is not clear it could have evolved.
+However, none of the potential intermediates are expected to provide a fitness benefit in modern conditions so it is not clear how it evolved.
 The atmosphere was very different when the $\alpha$-CCM evolved, with much higher levels of CO$_2$ and much lower levels of O$_2$.
 This lead us to hypothesize that evolutionary intermediates of the CCM may have provided fitness benefits at intermediate atmospheric compositions.
 %
 \subsubsection{Central finding}
-Evolving an $\alpha$-CCM required acquiring a CA, gaining a C$_i$ pump, and co-encapsulating CA and rubisco. 
+Evolving an $\alpha$-CCM required acquiring a CA, gaining a HCO$_{3}^{-}$ pump, and co-encapsulating CA and rubisco. 
 Removing any of these stops $\alpha$-CCM function in normal atmosphere.
 We measured the effect of $\alpha$-CCM gene knockouts in \textit{H. neapolitanus} across different CO$_2$ concentrations.
-We also measured  the CO$_2$ dependent phenotypes of potential evolutionary intermediates in CCM dependent strains of \textit{E. coli} and \textit{C. necator} that we constructed.
+We also measured  the CO$_2$ dependent phenotypes of potential evolutionary intermediates in reporter strains of \textit{E. coli} and \textit{C. necator} that we constructed.
 We modeled carbon fluxes as a function of growth rate and CO$_2$ concentration.
 This data suggested that as CO$_2$ concentrations fall, HCO$_{3}^{-}$ becomes limiting before CO$_2$.
 This suggested that as CO$_2$ started to fall either a pump or CA can help.
@@ -169,7 +169,7 @@ I performed a massively parallel growth assay of gene knockouts in \textit{H. ne
 %
 \subsubsection{Influence/Application}
 This work provides insight into the evolution of the $\alpha$-CCM and into possible life strategies of modern organisms living in high CO$_2$ environments.
-These strategies might also be useful for improving the growth of industrial autotrophs.
+These advances might also be useful for improving the growth of industrial autotrophs.
 Further, showing expression of the pumps in \textit{C. necator} offers the potential to improve bio-plastics production.
 
 %
@@ -183,19 +183,20 @@ Further, showing expression of the pumps in \textit{C. necator} offers the poten
 \subsection{General epistasis protein fitness landscape mapping and design:}
 \subsubsection{Historical background}
 Mutational scanning maps a protein's fitness landscape by measuring the fitness of all single mutants.
-This information is used for variant effects prediction and design.
-However, mutational scanning experiments are difficult because they require production of all single mutants and they only provide information on fitness in the protein's local context limiting their utility for divergent proteins.
+This information is used for variant effect prediction and design.
+However, mutational scanning experiments require production of all single mutants and only provide information on fitness in the protein's local context, limiting their utility for divergent proteins.
 Being able to learn from data sets that are easier to generate and provide information over a wider area would be greatly beneficial.
-Current efforts to learn from random mutagenesis have relied on large neural networks or linear methods.
+Current efforts to learn from random mutagenesis have relied on neural networks or linear methods.
 However, linear methods miss nonlinearities in the data's true structure and neural networks cannot be inspected to gain insight into function.
 General epistatic models capture nonlinear genotype-phenotype relationships without sacrificing interpretability but have not been applied to protein design.
 Phylogentic data also provide insight into fitness landscapes but inspectable models that are able to leverage both phylogenetic and experimental data have been rare.
 %
 \subsubsection{Central finding}
-We performed random mutagenesis on dihydrofolate reductase (DHFR) and measured enzyme activity in a massively parallel growth assay. 
-I trained models including simple linear models, general epistatic models, and large neural nets with and without access to phylogenetic data. 
-I showed that the general epistatic models had simmilar performance to the neural net on held out training data and out performed the phylogenetic data alone or with the linear model. 
-I also used each of these models to design new DHFR variants while systematically varying both number of mutations and optimization strategy to evaluate how well each model is able to extrapolate.
+We performed random mutagenesis on dihydrofolate reductase and measured enzyme activity in a massively parallel growth assay. 
+I trained models including linear models, general epistatic models, and large neural nets with and without access to phylogenetic data. 
+I showed that the general epistatic models had simmilar performance to the neural net on held out test data.
+Both these models showed improvement when provided with phylogenetic data but out performed the phylogenetic data alone or with the linear model. 
+I also used each model to design new variants while systematically varying both number of mutations and optimization strategy to evaluate how well each model is able to extrapolate.
 I used a massively parallel growth assay to validate 12,000 designed proteins.
 This work is currently awaiting sequencing results from the final experiment before submission.
 %
@@ -226,7 +227,7 @@ CasX is a $<$1,000 amino acid RuvC containing protein from CRISPR loci.
 We demonstrated guide directed cutting activity \textit{in vitro} as well as cutting and CRISPRi \textit{in vivo}.
 We solved a structure of the complex with target DNA and identified two new domains.
 We also detected a zinc binding motif and showed that CasX binds zinc.
-My role was to use x-ray fluorescence to identify the zinc bound to the purified protein.
+My role was to use x-ray fluorescence to detect zinc bound to the purified protein.
 CasX provides a new modality for genome editing that is proving useful in a variety of applications.
 Scribe Therapeutics is pursuing casX based therapies.
 %
