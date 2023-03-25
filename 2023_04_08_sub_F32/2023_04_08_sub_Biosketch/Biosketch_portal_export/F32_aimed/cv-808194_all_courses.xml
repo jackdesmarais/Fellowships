@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<profile xmlns="http://www.ncbi.nlm.nih.gov/sciencv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/sciencv http://api.ncbi.nlm.nih.gov/sciencv/schema/sciencv.1.12.xsd" accession="SCV726341.2">
+<profile xmlns="http://www.ncbi.nlm.nih.gov/sciencv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/sciencv http://api.ncbi.nlm.nih.gov/sciencv/schema/sciencv.1.12.xsd" accession="SCV808194.3">
   <identification>
     <id idtype="orcid">0000-0002-7739-2079</id>
     <account accounttype="eRA-Commons">jdesmarais</account>
@@ -49,6 +49,36 @@
       </enddate>
       <major>Molecular and Cell Biology</major>
     </degree>
+    <professionaltraining trainingtype="Postdoctoral Fellow">
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <city>Berkeley</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2022</year>
+        <month>10</month>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+        <month>12</month>
+      </enddate>
+      <description>Postdoctoral Fellow in the Savage lab</description>
+    </professionaltraining>
+    <professionaltraining trainingtype="Postdoctoral Fellow">
+      <organization>
+        <orgname>Cold Spring Harbor Laboratory</orgname>
+        <city>Cold Spring Harbor</city>
+        <stateorprovince>NY</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2023</year>
+        <month>1</month>
+      </startdate>
+      <description>Computational Postdoctoral Fellow in the Kinney Lab</description>
+    </professionaltraining>
     <courseinfo>
       <coursework courseworktype="University_of_California_Berkeley-PHD-Molecular_and_Cell_Biology">
         <organization>
@@ -367,12 +397,12 @@
           <country>US</country>
         </organization>
       </coursework>
-      <notes><![CDATA[<p>For all University of California Berkeley graduate level courses, S indicates a passing grade in a course graded on a Satisfactory/Not Satisfactory grading scheme.</p>
+      <notes><![CDATA[<p>For all University of California Berkeley graduate level courses, the scale is from A to F (A+ is awarded as a mark of achievement but both A+ and A are counted as 4.0 for GPA calculations) and passing grades are B- or higher. In this scale A+ is a 4.0, A is also 4.0, and an A- is a 3.7. S indicates a passing grade (B- or higher) in a course graded on a Satisfactory/Not Satisfactory grading scheme, courses graded on this scheme are not included in GPA calculations.</p>
 ]]></notes>
     </courseinfo>
   </education>
   <employment>
-    <position featured="true" current="yes">
+    <position featured="false" current="yes">
       <positiontitle>Computational Postdoctoral Fellow</positiontitle>
       <organization>
         <orgname>Cold Spring Harbor Laboratory</orgname>
@@ -385,149 +415,237 @@
         <year>2023</year>
       </startdate>
     </position>
+    <position featured="false" current="yes">
+      <positiontitle>Member</positiontitle>
+      <organization>
+        <orgname>Phi Beta Kappa honor society</orgname>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Postdoctoral Fellow</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Savage Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2022</year>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Graduate student instructor</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2017</year>
+      </startdate>
+      <enddate>
+        <year>2019</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Graduate student researcher</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Savage Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+      <enddate>
+        <year>2022</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Amgen Scholar</positiontitle>
+      <organization>
+        <orgname>University of California, Berkeley</orgname>
+        <orgsection>Joint Bioenergy Institute</orgsection>
+        <orgsection>Keasling Lab</orgsection>
+        <city>BERKELEY</city>
+        <stateorprovince>CA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2015</year>
+      </startdate>
+      <enddate>
+        <year>2015</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Researcher</positiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>Ward Lab</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2014</year>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Stowers Summer Scholar</positiontitle>
+      <organization>
+        <orgname>Stowers Institute for Medical Research</orgname>
+        <orgsection>Matt Gibson Lab</orgsection>
+        <city>Kansas City</city>
+        <stateorprovince>MO</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2014</year>
+      </startdate>
+      <enddate>
+        <year>2014</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Researcher</positiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+        <orgsection>2013 STEM Innovation Program</orgsection>
+        <city>Middlebury</city>
+        <stateorprovince>VT</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2013</year>
+      </startdate>
+      <enddate>
+        <year>2013</year>
+      </enddate>
+    </position>
+    <position featured="false" current="no">
+      <positiontitle>Intern</positiontitle>
+      <organization>
+        <orgname>University of Washington Medical School</orgname>
+        <orgsection>Neitz Color Vision Lab</orgsection>
+        <city>Seattle</city>
+        <stateorprovince>WA</stateorprovince>
+        <country>United States</country>
+      </organization>
+      <startdate>
+        <year>2011</year>
+      </startdate>
+      <enddate>
+        <year>2012</year>
+      </enddate>
+    </position>
   </employment>
   <funding/>
-  <distinctions/>
+  <distinctions>
+    <distinction>
+      <distinctiontitle>The 27th Annual Western Photosynthesis Conference travel award </distinctiontitle>
+      <organization>
+        <orgname>Western Photosynthesis conference</orgname>
+      </organization>
+      <startdate>
+        <year>2017</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Elbert C. Cole ’15 Memorial Fund Prize</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College, Department of Biology</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Summa cum laude</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>High Honors</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College Department of Molecular Biology and Biochemistry</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Inducted Phi Beta Kappa honor society</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2016</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>Dean’s List, spring semester</distinctiontitle>
+      <organization>
+        <orgname>Middlebury College</orgname>
+      </organization>
+      <startdate>
+        <year>2015</year>
+      </startdate>
+    </distinction>
+    <distinction>
+      <distinctiontitle>College Scholar, 6 semesters</distinctiontitle>
+      <organization>
+        <orgname>Middlebury college</orgname>
+      </organization>
+      <startdate>
+        <year>2013</year>
+      </startdate>
+      <enddate>
+        <year>2016</year>
+      </enddate>
+    </distinction>
+  </distinctions>
   <contributions>
-    <citations/>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
+    <citations>
+      <annotation/>
+    </citations>
     <memberships/>
   </contributions>
   <statements>
     <statement>
       <annotation/>
-      <citation type="journal" id="64383050">
-        <title>Accelerated RNA detection using tandem CRISPR nucleases</title>
-        <bibliographydates>
-          <bibliographydate type="display">2021 08</bibliographydate>
-        </bibliographydates>
-        <contributors>
-          <contributor type="author">Liu, Tina Y</contributor>
-          <contributor type="author">Knott, Gavin J</contributor>
-          <contributor type="author">Smock, Dylan C J</contributor>
-          <contributor type="author">Desmarais, John J</contributor>
-          <contributor type="author">Son, Sungmin</contributor>
-          <contributor type="author">Bhuiya, Abdul</contributor>
-          <contributor type="author">Jakhanwal, Shrutee</contributor>
-          <contributor type="author">Prywes, Noam</contributor>
-          <contributor type="author">Agrawal, Shreeya</contributor>
-          <contributor type="author">D\'\iaz de Le\'on Derby, Mar\'\ia</contributor>
-          <contributor type="author">Switz, Neil A</contributor>
-          <contributor type="author">Armstrong, Maxim</contributor>
-          <contributor type="author">Harris, Andrew R</contributor>
-          <contributor type="author">Charles, Emeric J</contributor>
-          <contributor type="author">Thornton, Brittney W</contributor>
-          <contributor type="author">Fozouni, Parinaz</contributor>
-          <contributor type="author">Shu, Jeffrey</contributor>
-          <contributor type="author">Stephens, Stephanie I</contributor>
-          <contributor type="author">Kumar, G Renuka</contributor>
-          <contributor type="author">Zhao, Chunyu</contributor>
-          <contributor type="author">Mok, Amanda</contributor>
-          <contributor type="author">Iavarone, Anthony T</contributor>
-          <contributor type="author">Escajeda, Arturo M</contributor>
-          <contributor type="author">McIntosh, Roger</contributor>
-          <contributor type="author">Kim, Shineui</contributor>
-          <contributor type="author">Dugan, Eli J</contributor>
-          <contributor type="author">Pollard,               Katherine S</contributor>
-          <contributor type="author">Tan, Ming X</contributor>
-          <contributor type="author">Ott, Melanie</contributor>
-          <contributor type="author">Fletcher,               Daniel A</contributor>
-          <contributor type="author">Lareau, Liana F</contributor>
-          <contributor type="author">Hsu, Patrick D</contributor>
-          <contributor type="author">Savage,               David F</contributor>
-          <contributor type="author">Doudna, Jennifer A</contributor>
-        </contributors>
-        <externalids/>
-        <journal>
-          <journalname>Nat. Chem. Biol.</journalname>
-          <page>1--7</page>
-        </journal>
-      </citation>
-      <citation type="journal" id="64383049">
-        <title>CasX enzymes comprise a distinct family of RNA-guided genome editors</title>
-        <subtitle/>
-        <bibliographydates>
-          <bibliographydate type="display">2019-2-4</bibliographydate>
-        </bibliographydates>
-        <contributors>
-          <contributor type="author">Liu,Jun-Jie,</contributor>
-          <contributor type="author">Orlova,Natalia,</contributor>
-          <contributor type="author">Oakes,Benjamin L.,</contributor>
-          <contributor type="author">Ma,Enbo,</contributor>
-          <contributor type="author">Spinner,Hannah B.,</contributor>
-          <contributor type="author">Baney,Katherine L. M.,</contributor>
-          <contributor type="author">Chuck,Jonathan,</contributor>
-          <contributor type="author">Tan,Dan,</contributor>
-          <contributor type="author">Knott,Gavin J.,</contributor>
-          <contributor type="author">Harrington,Lucas B.,</contributor>
-          <contributor type="author">Al-Shayeb,Basem,</contributor>
-          <contributor type="author">Wagner,Alexander,</contributor>
-          <contributor type="author">Brötzmann,Julian,</contributor>
-          <contributor type="author">Staahl,Brett T.,</contributor>
-          <contributor type="author">Taylor,Kian L.,</contributor>
-          <contributor type="author">Desmarais,John,</contributor>
-          <contributor type="author">Nogales,Eva,</contributor>
-          <contributor type="author">Doudna,Jennifer A.,</contributor>
-        </contributors>
-        <externalids>
-          <externalid type="doi">10.1038/s41586-019-0908-x</externalid>
-          <externalid type="pii">908</externalid>
-        </externalids>
-        <summary/>
-        <url>http://www.nature.com/articles/s41586-019-0908-x</url>
-        <info/>
-        <journal>
-          <journalname>Nature</journalname>
-          <volume>566</volume>
-          <issue>7743</issue>
-          <page>218-223</page>
-        </journal>
-      </citation>
-      <citation type="journal" id="64383052">
-        <title>DABs are inorganic carbon pumps found throughout prokaryotic
-              phyla</title>
-        <bibliographydates>
-          <bibliographydate type="display">2019 08</bibliographydate>
-        </bibliographydates>
-        <contributors>
-          <contributor type="author">Desmarais, John J</contributor>
-          <contributor type="author">Flamholz, Avi I</contributor>
-          <contributor type="author">Blikstad, Cecilia</contributor>
-          <contributor type="author">Dugan, Eli J</contributor>
-          <contributor type="author">Laughlin, Thomas G</contributor>
-          <contributor type="author">Oltrogge, Luke M</contributor>
-          <contributor type="author">Chen, Allen W</contributor>
-          <contributor type="author">Wetmore, Kelly</contributor>
-          <contributor type="author">Diamond, Spencer</contributor>
-          <contributor type="author">Wang,              Joy Y</contributor>
-          <contributor type="author">Savage, David F</contributor>
-        </contributors>
-        <externalids/>
-        <journal>
-          <journalname>Nat Microbiol</journalname>
-        </journal>
-      </citation>
-      <citation type="journal" id="64383054">
-        <title>Engineering glucose metabolism of Escherichia coli under nitrogen starvation</title>
-        <bibliographydates>
-          <bibliographydate type="display">2017</bibliographydate>
-        </bibliographydates>
-        <contributors>
-          <contributor type="author">Chubukov, Victor</contributor>
-          <contributor type="author">Desmarais, John James</contributor>
-          <contributor type="author">Wang, George</contributor>
-          <contributor type="author">Chan, Leanne Jade G</contributor>
-          <contributor type="author">Baidoo, Edward EK</contributor>
-          <contributor type="author">Petzold, Christopher J</contributor>
-          <contributor type="author">Keasling, Jay D</contributor>
-          <contributor type="author">Mukhopadhyay, Aindrila</contributor>
-        </contributors>
-        <externalids/>
-        <journal>
-          <journalname>npj Systems Biology and Applications</journalname>
-          <volume>3</volume>
-          <page>16035</page>
-        </journal>
-      </citation>
     </statement>
   </statements>
 </profile>
