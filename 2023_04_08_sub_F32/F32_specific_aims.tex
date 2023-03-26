@@ -1,0 +1,115 @@
+%!TEX output_directory = build
+%!TEX copy_output_on_build = true
+
+\documentclass{article}
+
+\usepackage[
+backend=biber,
+style=numeric-comp,
+sorting=none
+]{biblatex}
+
+\addbibresource{paperpile.bib} %Imports bibliography file
+
+\raggedright
+
+\usepackage[no-math]{fontspec}
+\setmainfont{Arial}
+\newfontfamily\latofont{Arial}
+
+
+\usepackage{soul}
+
+\usepackage[letterpaper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.5in,
+            bottom=0.5in,
+            footskip=.25in]{geometry}
+
+\usepackage{titlesec} 
+\titleformat{\section}[runin]
+  {\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{-\parskip}{1mm}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[runin]
+  {\normalfont\normalsize\bfseries}{Aim \thesubsection: }{0pt}{}
+\titlespacing{\subsection}{0pt}{-\parskip}{1mm}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\itshape}{Sub-aim \thesubsubsection: }{0pt}{\ul}
+\titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
+
+\begin{document}
+\section*{Specific Aims:}
+%
+% \section*{Rationale: } 
+Splicing is a process where introns are removed from pre-mRNAs and the exons are stitched together. 
+This offers the potential to introduce tremendous diversity into the proteome by changing which sequences from the pre-mRNA are included as exons.
+Accordingly, more than 90\% of human genes are alternatively spliced.\supercite{Wang2008-ej} 
+Errors in splicing are involved in a wide variety of human diseases including familial dysautonomia, early onset Parkinson disease, and cancer.\supercite{Scotti2015-yp} 
+Recent efforts have produced drugs that modulate splicing outcomes to treat spinal muscular atrophy, Huntington's disease, Duchenne muscular dystrophy, and cancer.\supercite{Neil2022-vf}
+Improving our understanding of splicing will deepen our knowledge of development and differentiation and our ability to target these processes with therapeutics.
+Much progress has been made using massively parallel splicing assays (MPSAs) to probe the mechanisms of splicing.\supercite{Ke2018-af, Julien2016-wa, Adamson2018-va, Soemedi2017-pz, Cortes-Lopez2022-gy, Schirman2021-ss, Mikl2019-ng, Braun2018-mb, Soucek2019-iq, Baeza-Centurion2020-tn, Cheung2019-ah, Baeza-Centurion2019-hz, Rosenberg2015-zs, Wong2018-vq} 
+These efforts have utilized Illumina technology which cannot produce reads capable of covering the whole length of most genes, greatly affecting the isoforms that can be detected.
+This issue has been overcome by studying systems shrunk to fit an Illumina read or by ignoring unexpected isoforms.
+Yet the median human intron is 1.7 kb in length\supercite{Piovesan2019-rp} far longer than an Illumina read and perturbations can cause complicated changes in splicing outcomes.\supercite{Cortes-Lopez2022-gy,Wang2012-dr,Mathur2019-hy}
+Further, MPSAs have so far focused on the decision to include or exclude a single exon.
+However, recent work has begun to show that correlated splicing decisions across exons are far more common than was previously understood.\supercite{Zhu2021-fs, Tilgner2015-sb, Hatje2017-oj,Tilgner2018-jo} 
+A particularly interesting case of correlated splicing is mutually exclusive exons (MXEs). 
+MXEs are clusters of exons that are spliced such that every isoform includes exactly one exon from the cluster. 
+A recent analysis of human RNA-seq data identified 629 MXE clusters, of of which less than 25\% had an identifiable mechanism for maintaining mutual exclusivity (MMX).\supercite{Hatje2017-oj} 
+\textbf{In order to overcome these issues, I propose to develop a long read massively parallel splicing assay (LR-MPSA) capable of handling correlated splicing, full size introns, and complicated isoform distributions.} 
+\textbf{I will apply this assay to investigating MXEs with a focus on Pyruvate Kinase M (PKM).} 
+\\
+\subsection{Develop an MPSA protocol capable of handling the complexity of natural splicing.} \label{aim:MPSA_dev}
+%
+\subsubsection{Create an MPSA protocol utilizing nanopore sequencing technology.} \label{aim:nanopore_screen_dev}
+I will develop an LR-MPSA optimized for characterizing the mechanisms of complex splicing decisions in the context of full native introns and all isoform outputs.
+I will adapt MPSA techniques honed by the Kinney lab\supercite{Wong2018-vq,Ishigami2022-bf} by creating new sample and library preparation pipelines optimized for unbiased isoform enrichment and nanopore sequencing.
+%
+\subsubsection{Develop an analysis pipeline for quantifying isoform abundances from LR-MPSA data.} \label{aim:pipeline_dev}
+Calling low abundance RNA isoforms from nanopore reads faces challenges from the low depth and high noise.
+I will develop an analysis pipeline for identifying and quantifying isoforms that optimizes for power to detect low abundance isoforms and minimizes incorrect isoform assignment.
+I will simulate nanopore reads given a known ground truth isoform distribution for each variant to test and optimize the new pipeline at various depths and error profiles.
+%
+\subsection{Characterize the mechanism for mutual exclusivity in Pyruvate Kinase M (PKM) exons 9 and 10.}
+PKM catalyzes the rate limiting step in glycolysis and has two primary isoforms defined by the inclusion of either exon 9 or exon 10. 
+The conversion between these two isoforms is a primary driver of the Warburg effect and is important in a wide variety of cancers.\supercite{Christofk2008-bu,Ma2022-dt} 
+However, the mechanism for MMX between exons 9 and 10 is unknown.
+%
+\subsubsection{Identify sequence elements necessary for mutual exclusivity in PKM splicing.} \label{aim:PKM_motif_finding}
+I will use PKM minigene constructs designed by the Krainer lab \supercite{Wang2012-dr} to screen for mutants that loose MMX.
+I will use mutant scans over exons 9 and 10 to find MMX elements because previous work has shown that regulatory sequences are located in these exons.\supercite{Wang2012-dr} 
+Broader random mutagenesis will map elements in introns.
+MMX regions will be mapped at higher resolution with deep mutagenesis.
+If the nanopore screening technique fails, I will use short-read or low throughput methods for screening.
+%
+\subsubsection{Mechanistically characterize sequence elements enforcing mutual exclusivity.} \label{aim:PKM_mechanistic}
+I will follow up identification of MMX elements with mechanistic studies. 
+One hypothesis for the identity of new MMX elements is RNA secondary structural elements. 
+I will use mutant cycle analysis to show dependence on structure for any identified secondary structural elements. 
+Another hypothesis is that MMX elements are motifs for RNA binding proteins (RBPs).
+I will use pull downs as well as motif mutants coupled with RNAi knockdown and over-expression of RBPs to demonstrate the importance of RBP binding motifs. 
+
+
+
+
+
+
+
+\printbibliography
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
