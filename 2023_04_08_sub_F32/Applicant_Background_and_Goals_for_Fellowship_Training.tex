@@ -1,0 +1,276 @@
+%!TEX program = lualatex
+%!TEX output_directory = build
+%!TEX copy_output_on_build = true
+
+\documentclass[11pt]{article}
+
+\usepackage[
+backend=biber,
+url=false,
+eprint=false, 
+dashed=false,
+style=authoryear,
+sorting=none
+]{biblatex}
+
+\addbibresource{paperpile.bib} %Imports bibliography file
+
+% \usepackage[style=authoryear, 
+%             backend=biber,
+%             url=false,
+%             eprint=false, 
+%             dashed=false,
+%             maxnames=999]{biblatex}
+% \addbibresource{mypapers.bib} %Imports bibliography file
+
+% \newcounter{namesnotimportant}
+% \newtoggle{ellipsis}
+
+% \makeatletter
+% \newbibmacro*{name:etal:delim}[1]{%
+%   \ifnumgreater{\value{listcount}}{\value{liststart}}
+%     {\ifboolexpr{
+%        test {\ifnumless{\value{listcount}}{\value{liststop}}}
+%        or
+%        test \ifmorenames
+%        or test {\ifnumcomp{\value{namesnotimportant}}{>}{0}}
+%      }
+%        {\printdelim{multinamedelim}}
+%        {\lbx@finalnamedelim{#1}}}
+%     {}}
+% \makeatother
+
+% \DeclareNameFormat{given-family-etal}{%
+%   \letbibmacro{name:delim}{name:etal:delim}%
+%   \ifnumcomp{\value{listcount}}{=}{1}
+%     {\setcounter{namesnotimportant}{0}%
+%      \global\toggletrue{ellipsis}}
+%     {}%
+%   \ifboolexpr{test {\ifnumcomp{\value{listcount}}{=}{1}}
+%               or test {\ifnumcomp{\value{listtotal}}{=}{2}}}
+%     {\ifgiveninits
+%       {\usebibmacro{name:given-family}
+%          {\namepartfamily}
+%          {\namepartgiveni}
+%          {\namepartprefix}
+%          {\namepartsuffix}}
+%       {\usebibmacro{name:given-family}
+%          {\namepartfamily}
+%          {\namepartgiven}
+%          {\namepartprefix}
+%          {\namepartsuffix}}}%
+%     {\ifboolexpr{test {\iffieldequalstr{hash}{d044631f3f9582c1e40e11481a6d06e9}}
+%             or 
+%             test {\iffieldequalstr{hash}{d36f79db286d144cbc39cc5559a702d3}}
+%             or 
+%             test {\iffieldequalstr{hash}{02913108490bef3778a320768a68b0d9}}}%% <----- put the correct hash here
+%       {\global\toggletrue{ellipsis}%
+%        \ifgiveninits
+%         {\usebibmacro{name:given-family}
+%            {\namepartfamily}
+%            {\namepartgiveni}
+%            {\namepartprefix}
+%            {\namepartsuffix}}
+%         {\usebibmacro{name:given-family}
+%            {\namepartfamily}
+%            {\namepartgiven}
+%            {\namepartprefix}
+%            {\namepartsuffix}}}%
+%       {\stepcounter{namesnotimportant}%
+%        \iftoggle{ellipsis}
+%          {\addcomma\space\textellipsis\global\togglefalse{ellipsis}\isdot}
+%          {}}}%
+%   \ifboolexpr{
+%     test {\ifnumequal{\value{listcount}}{\value{liststop}}}
+%     and
+%     (test \ifmorenames
+%      or test {\ifnumcomp{\value{namesnotimportant}}{>}{0}})
+%   }
+%     {\andothersdelim\bibstring{andothers}}
+%     {}}
+
+% \DeclareNameAlias{sortname}{given-family-etal}
+% \DeclareNameAlias{author}{given-family-etal}
+% \DeclareNameAlias{editor}{given-family-etal}
+% \DeclareNameAlias{translator}{given-family-etal}
+
+\raggedright
+
+\usepackage[no-math]{fontspec}
+\setmainfont{Arial}
+\newfontfamily\latofont{Arial}
+
+\usepackage{soul}
+
+\usepackage[letterpaper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.5in,
+            bottom=0.5in,
+            footskip=.25in]{geometry}
+
+\usepackage{titlesec} 
+\titleformat{\section}[runin]
+  {\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing{\section}{0pt}{-\parskip}{1mm}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1pt}{}
+\titlespacing{\subsection}{0pt}{-\parskip}{1mm}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\itshape}{\thesubsubsection}{1pt}{\ul}
+\titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
+
+\begin{document}
+
+\section*{Doctoral Dissertation and Research Experience}
+%
+\subsection{Neitz lab}
+\begin{refsection}
+\subsubsection{Mentor}
+Dr. Jay Neitz
+%
+\subsubsection{Role}
+Summer intern, Neitz lab, University of Washington medical school, 2011-2012
+%
+\subsubsection{Description}
+My first research experiences were summer internships in the Neitz lab during high school. I worked with postdoctoral fellows and graduate students in the lab to validate a mouse model for introduction of new photo-receptors in adult animals to study color vision neural circuitry function. As part of this project I worked on a color discrimination test for mice, took confocal images of mouse retinas, and measured electroretinograms of mice after pilot experiments.
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\nocite{Desmarais2012-ki,Desmarais2012-oz,Desmarais2012-nx}
+\printbibliography[heading=none]
+\end{refsection}
+%
+\subsection{STEM innovation program}
+\subsubsection{Mentor}
+Drs. Noah Graham, Frank Swenton, Jeremy Ward
+%
+\subsubsection{Role}
+Researcher, STEM innovation program, Middlebury College, 2013
+%
+\subsubsection{Description}
+%
+\subsection{Gibson lab}
+%
+\subsubsection{Mentor}
+Drs. Matthew C. Gibson, Aissam Ikmi
+%
+\subsubsection{Role}
+Stowers Summer Scholar, Gibson lab, Stowers Institute for Medical Research, 2014
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\subsection{Keasling lab}
+\begin{refsection}
+%
+\subsubsection{Mentor}
+Drs. Jay Keasling, Victor Chubukov
+%
+\subsubsection{Role}
+Amgen Scholar, Keasling lab, Joint Bioenergy Institute, University of California, Berkeley, 2015
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\nocite{Chubukov2017-uu}
+\printbibliography[heading=none]
+\end{refsection}
+%
+\subsection{Ward lab}
+%
+\subsubsection{Mentor}
+Dr. Jeremy Ward
+%
+\subsubsection{Role}
+Researcher, Ward lab, Middlebury College, 2014-2016
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\subsection{Savage lab - Studies of the CO$_2$ concentrating mechanism}
+%
+\subsubsection{Mentor}
+Dr. David Savage
+%
+\subsubsection{Role}
+Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\subsection{Savage lab - Protein engineering}
+%
+\subsubsection{Mentor}
+Dr. David Savage
+%
+\subsubsection{Role}
+Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\subsection{Savage lab - CRISPR tool development}
+%
+\subsubsection{Mentor}
+Dr. David Savage
+%
+\subsubsection{Role}
+Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\subsection{Kinney lab}
+%
+\subsubsection{Mentor}
+Dr. Justin Kinney
+%
+\subsubsection{Role}
+Computational Postdoctoral Fellow, Kinney Lab, Cold Spring Harbor Laboratory, 2023
+%
+\subsubsection{Description}
+%
+\subsubsection{Results}
+%
+\subsubsection{Connection to fellowship}
+%
+\section*{Goals for the Fellowship and Training}
+%
+\subsection{Overall training goals}
+%
+\subsection{Skills to be enhanced}
+%
+\subsection{Preparation for career plans}
+%
+\section*{Activities Planned Under This Award}
+
+
+
+
+
+\end{document}
