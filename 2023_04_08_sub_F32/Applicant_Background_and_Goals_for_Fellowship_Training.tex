@@ -10,7 +10,8 @@ url=false,
 eprint=false, 
 dashed=false,
 style=authoryear,
-sorting=none
+sorting=none,
+maxnames=999
 ]{biblatex}
 
 \addbibresource{paperpile.bib} %Imports bibliography file
@@ -111,153 +112,200 @@ sorting=none
             footskip=.25in]{geometry}
 
 \usepackage{titlesec} 
-\titleformat{\section}[runin]
-  {\normalfont\normalsize\bfseries}{}{0pt}{}
+\titleformat{\section}[hang]
+  {\normalfont\normalsize\bfseries}{}{1ex}{}
 \titlespacing{\section}{0pt}{-\parskip}{1mm}
 
-\renewcommand{\thesubsection}{\arabic{subsection}}
 \titleformat{\subsection}[runin]
-  {\normalfont\normalsize\bfseries}{\thesubsection}{1pt}{}
-\titlespacing{\subsection}{0pt}{-\parskip}{1mm}
+  {\normalfont\normalsize}{}{1mm}{\ul}
+\titlespacing{\subsection}{0pt}{11pt}{1mm}
 
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
 \titleformat{\subsubsection}[runin]
-  {\normalfont\normalsize\itshape}{\thesubsubsection}{1pt}{\ul}
-\titlespacing{\subsubsection}{0pt}{-\parskip}{1mm}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1mm}{}
+\titlespacing{\subsubsection}{0pt}{11pt}{1mm}
+
+\titleformat{\paragraph}[runin]
+  {\normalfont\normalsize\itshape}{\theparagraph}{1pt}{\ul}
+\titlespacing{\paragraph}{0pt}{-\parskip}{1mm}
 
 \begin{document}
 
 \section*{Doctoral Dissertation and Research Experience}
 %
-\subsection{Neitz lab}
+\subsection{Predoctoral research}
+\subsubsection{Neitz lab}
 \begin{refsection}
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Dr. Jay Neitz
 %
-\subsubsection{Role}
+\paragraph{Role}
 Summer intern, Neitz lab, University of Washington medical school, 2011-2012
 %
-\subsubsection{Description}
-My first research experiences were summer internships in the Neitz lab during high school. I worked with postdoctoral fellows and graduate students in the lab to validate a mouse model for introduction of new photo-receptors in adult animals to study color vision neural circuitry function. As part of this project I worked on a color discrimination test for mice, took confocal images of mouse retinas, and measured electroretinograms of mice after pilot experiments.
-%
-\subsubsection{Results}
-%
-\subsubsection{Connection to fellowship}
+\paragraph{Description}
+My first research experiences were summer internships in the Neitz lab during high school. 
+I worked with postdoctoral fellows and graduate students in the lab to validate a mouse model for introduction of new photo-receptors in adult animals to study color vision neural circuitry function. 
+As part of this project I worked on a color discrimination test for mice, took confocal images of mouse retinas, and measured electroretinograms of mice after pilot experiments.
+I presented this work at two local competitions and a regional competition.
 %
 \nocite{Desmarais2012-ki,Desmarais2012-oz,Desmarais2012-nx}
 \printbibliography[heading=none]
 \end{refsection}
 %
-\subsection{STEM innovation program}
-\subsubsection{Mentor}
+\subsubsection{STEM innovation program}
+\paragraph{Mentor}
 Drs. Noah Graham, Frank Swenton, Jeremy Ward
 %
-\subsubsection{Role}
+\paragraph{Role}
 Researcher, STEM innovation program, Middlebury College, 2013
 %
-\subsubsection{Description}
+\paragraph{Description}
+During my freshman year at college, I applied to and joined the STEM innovation program, where a group of 9 undergraduates designed and executed a synthetic biology project. 
+We set out to create a biosensor for detecting aromatic hydrocarbons in water samples, focusing on benzene, toluene, ethylbenzene and xylene (BTEX) as they have been detected in groundwater near fracking wells. 
+We designed and built constructs using a transcriptional regulator from \textit{P. putida}, tested lyophilization/rehydration protocols, and built and tested a portable fluorescence reader for testing samples. 
 %
-\subsection{Gibson lab}
+\subsubsection{Gibson lab}
 %
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Drs. Matthew C. Gibson, Aissam Ikmi
 %
-\subsubsection{Role}
+\paragraph{Role}
 Stowers Summer Scholar, Gibson lab, Stowers Institute for Medical Research, 2014
 %
-\subsubsection{Description}
+\paragraph{Description}
+During the summer after my sophomore year, I was a Stowers summer scholar in Matthew Gibson's lab.
+I worked with the postdoc Dr. Aissam Ikmi, studying how the size on the embryo affects the early development of \textit{N. vectensis} sea anemones.
+\textit{N. vectensis} grows from an egg into a polyp with 4 tentacles and then begins to eat and grow.
+At the 4 cell stage, all 4 cells still retain their ability to produce a viable polyp.
+By subdividing embryos and observing their development, we hoped to observe the effects of size on developmental processes like tentacle patterning.
 %
-\subsubsection{Results}
+\paragraph{Results}
+Reducing embryo size also reduced polyp size, reducing length more than width, and tentacle number.
+Mesentery number changed with tentacle number maintaining a ratio of two mesenteries for each tentacle.
+Regardless of initial size, polyps grew to similar sizes before developing the first pair of additional tentacles.
+All together, this data suggested that tentacles are patterned in a size dependent manner.
 %
-\subsubsection{Connection to fellowship}
-%
-\subsection{Keasling lab}
+\subsubsection{Keasling lab}
 \begin{refsection}
 %
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Drs. Jay Keasling, Victor Chubukov
 %
-\subsubsection{Role}
+\paragraph{Role}
 Amgen Scholar, Keasling lab, Joint Bioenergy Institute, University of California, Berkeley, 2015
 %
-\subsubsection{Description}
+\paragraph{Description}
+After my junior year of college, I joined the Keasling lab for the summer as an Amgen Scholar.
+Under the mentorship of postdoc Dr. Victor Chubukov, I worked on developing chassis strains of \textit{E. coli} that could be used to improve yields in bio-production of fuels and chemicals.
+By developing chassis strains, we hoped to provide broadly applicable methods that applied to a variety of different target chemicals.
+One major issue encountered by metabolic engineers in producing chemicals is shunting carbon and energy towards growth not production. 
+In order to avoid this growth and production can be separated by placing the cells in growth limiting conditions while inducing the production pathway.
+However, many chassis strains will go dormant under these conditions.
+We tested the hypothesis that increasing glucose uptake during nitrogen starvation would increase the amount of carbon and energy that could be directed to production.
 %
-\subsubsection{Results}
-%
-\subsubsection{Connection to fellowship}
+\paragraph{Results}
+In nitrogen starvation, $\alpha$-ketoglutarate levels rise, inhibiting the enzyme PtsI.
+This blocks glucose phosphorylation and therefore uptake.
+We trialed 3 methods to overcome this regulation.
+The first was over-expressing PtsI.
+The second was a PtsI-PtsP chimera that was hypothesized to avoid inhibition.
+The third was GalP and Glk a permease and kinase that take up glucose through an orthogonal pathway.
+We found that all of these strategies increase glucose uptake during nitrogen limitation, but PtsI over-expression is more effective than chimera over-expression, and Galp/Glk over-expression can cause cell death.
+The PtsI over-expression strain consumed 4x more glucose than WT during nitrogen starvation despite optical density staying constant and a lack of fermentation byproducts being secreted.
+This suggests that the glucose was converted all the way to CO$_2$ by the TCA cycle.
+We then tested if this strategy improved yield in a fatty alcohol production experiment.
+We saw that while nitrogen staring the cells increased carbon use efficiency, increasing their metabolic activity with PtsI did not improve yield.
+We published these finding in NPJ systems and synthetic biology.
 %
 \nocite{Chubukov2017-uu}
 \printbibliography[heading=none]
 \end{refsection}
 %
-\subsection{Ward lab}
+\subsubsection{Ward lab}
 %
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Dr. Jeremy Ward
 %
-\subsubsection{Role}
+\paragraph{Role}
 Researcher, Ward lab, Middlebury College, 2014-2016
 %
-\subsubsection{Description}
+\paragraph{Description}
 %
-\subsubsection{Results}
+\paragraph{Results}
 %
 \subsubsection{Connection to fellowship}
+These experiences helped me to decide to pursue a career as a scientist and launched my scientific career. 
+These early projects exposed me to a wide variety of research areas and helped to guide me towards my eventual area of focus.
+These early research projects also gave me a wide breadth of experience with different techniques and organisms.
+Finally, they allowed me to build my skills planning and managing research projects, expecially through my time running independent projects in the Ward lab and the STEM Innovation Project.
 %
-\subsection{Savage lab - Studies of the CO$_2$ concentrating mechanism}
+\subsection{Doctoral research}
+\subsubsection{Savage lab - Studies of the CO$_2$ concentrating mechanism}
+\begin{refsection}
 %
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Dr. David Savage
 %
-\subsubsection{Role}
+\paragraph{Role}
 Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
 %
-\subsubsection{Description}
+\paragraph{Description}
 %
-\subsubsection{Results}
+\paragraph{Results}
 %
-\subsubsection{Connection to fellowship}
+\paragraph{Connection to fellowship}
 %
-\subsection{Savage lab - Protein engineering}
+\nocite{Desmarais2019-dc,Flamholz2022-yo}
+\printbibliography[heading=none]
+\end{refsection}
 %
-\subsubsection{Mentor}
+\subsubsection{Savage lab - Protein engineering}
+%
+\paragraph{Mentor}
 Dr. David Savage
 %
-\subsubsection{Role}
+\paragraph{Role}
 Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
 %
-\subsubsection{Description}
+\paragraph{Description}
 %
-\subsubsection{Results}
+\paragraph{Results}
 %
-\subsubsection{Connection to fellowship}
+\paragraph{Connection to fellowship}
 %
-\subsection{Savage lab - CRISPR tool development}
+\subsubsection{Savage lab - CRISPR tool development}
+\begin{refsection}
 %
-\subsubsection{Mentor}
+\paragraph{Mentor}
 Dr. David Savage
 %
-\subsubsection{Role}
+\paragraph{Role}
 Graduate Student Researcher, Savage lab, University of California, Berkeley, 2016-2022
 %
-\subsubsection{Description}
+\paragraph{Description}
 %
-\subsubsection{Results}
+\paragraph{Results}
 %
-\subsubsection{Connection to fellowship}
+\paragraph{Connection to fellowship}
 %
-\subsection{Kinney lab}
+\nocite{Liu2019-nk,Liu2021-pu}
+\printbibliography[heading=none]
+\end{refsection}
 %
-\subsubsection{Mentor}
+\subsection{postdoctoral research}
+\subsubsection{Kinney lab}
+%
+\paragraph{Mentor}
 Dr. Justin Kinney
 %
-\subsubsection{Role}
+\paragraph{Role}
 Computational Postdoctoral Fellow, Kinney Lab, Cold Spring Harbor Laboratory, 2023
 %
-\subsubsection{Description}
+\paragraph{Description}
 %
-\subsubsection{Results}
+\paragraph{Results}
 %
-\subsubsection{Connection to fellowship}
+\paragraph{Connection to fellowship}
 %
 \section*{Goals for the Fellowship and Training}
 %
