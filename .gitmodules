@@ -7,3 +7,6 @@
 [submodule "Fellowships"]
 	path = Fellowships
 	url = git@github.com:jackdesmarais/Fellowships.git
+[submodule "APSA"]
+	path = APSA
+	url = ./APSA
