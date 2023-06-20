@@ -12,3 +12,7 @@ Got a draft of the equipment attachment done
 # [[2023_06_10]]
 ###### [[Daily_Notes/2023_06_10 |Sat-2023_06_10 ]] - 12:58 pm: 
 Began editing the RCR attatchment
+
+# [[2023_06_20]]
+###### [[Daily_Notes/2023_06_20 |Tue-2023_06_20 ]] - 11:24 am: 
+back to working on sponsor and institution
